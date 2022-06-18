@@ -2,128 +2,145 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/zh-tw/</loc>
+    <loc>https://VictorChao996.github.io/</loc>
     <lastmod>2022-06-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/"
+                href="https://VictorChao996.github.io/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.com/zh-cn/"
+                href="https://VictorChao996.github.io/zh-cn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://example.com/zh-tw/"
+                href="https://VictorChao996.github.io/"
                 />
   </url><url>
-    <loc>https://example.com/zh-tw/page/</loc>
+    <loc>https://VictorChao996.github.io/page/</loc>
     <lastmod>2022-06-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/page/"
+                href="https://VictorChao996.github.io/en/page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.com/zh-cn/page/"
+                href="https://VictorChao996.github.io/zh-cn/page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://example.com/zh-tw/page/"
+                href="https://VictorChao996.github.io/page/"
                 />
   </url><url>
-    <loc>https://example.com/zh-tw/archives/</loc>
+    <loc>https://VictorChao996.github.io/archives/</loc>
     <lastmod>2022-06-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/archives/"
+                href="https://VictorChao996.github.io/en/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://example.com/zh-tw/archives/"
+                href="https://VictorChao996.github.io/archives/"
                 />
   </url><url>
-    <loc>https://example.com/zh-tw/categories/</loc>
+    <loc>https://VictorChao996.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/categories/"
+                href="https://VictorChao996.github.io/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.com/zh-cn/categories/"
+                href="https://VictorChao996.github.io/zh-cn/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://example.com/zh-tw/categories/"
+                href="https://VictorChao996.github.io/categories/"
                 />
   </url><url>
-    <loc>https://example.com/zh-tw/links/</loc>
+    <loc>https://VictorChao996.github.io/links/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/links/"
+                href="https://VictorChao996.github.io/en/links/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://example.com/zh-tw/links/"
+                href="https://VictorChao996.github.io/links/"
                 />
   </url><url>
-    <loc>https://example.com/zh-tw/tags/</loc>
+    <loc>https://VictorChao996.github.io/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/tags/"
+                href="https://VictorChao996.github.io/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.com/zh-cn/tags/"
+                href="https://VictorChao996.github.io/zh-cn/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://example.com/zh-tw/tags/"
+                href="https://VictorChao996.github.io/tags/"
                 />
   </url><url>
-    <loc>https://example.com/zh-tw/search/</loc>
+    <loc>https://VictorChao996.github.io/categories/test/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/search/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://example.com/zh-tw/search/"
-                />
-  </url><url>
-    <loc>https://example.com/zh-tw/%E9%97%9C%E6%96%BC/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/about/"
+                href="https://VictorChao996.github.io/en/categories/test/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.com/zh-cn/%E5%85%B3%E4%BA%8E/"
+                href="https://VictorChao996.github.io/zh-cn/categories/test/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://example.com/zh-tw/%E9%97%9C%E6%96%BC/"
+                href="https://VictorChao996.github.io/categories/test/"
+                />
+  </url><url>
+    <loc>https://VictorChao996.github.io/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://VictorChao996.github.io/en/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://VictorChao996.github.io/search/"
+                />
+  </url><url>
+    <loc>https://VictorChao996.github.io/%E9%97%9C%E6%96%BC/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://VictorChao996.github.io/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://VictorChao996.github.io/zh-cn/%E5%85%B3%E4%BA%8E/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://VictorChao996.github.io/%E9%97%9C%E6%96%BC/"
                 />
   </url>
 </urlset>
