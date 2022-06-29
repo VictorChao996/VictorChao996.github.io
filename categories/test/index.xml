@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Test on 趙冠霖|ZHAO,GUAN-LIN</title>
-        <link>https://victorchao996.github.io/Portfolio_and_Blog/categories/test/</link>
+        <link>https://victorchao996.github.io/Blog/categories/test/</link>
         <description>Recent content in Test on 趙冠霖|ZHAO,GUAN-LIN</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language><atom:link href="https://victorchao996.github.io/Portfolio_and_Blog/categories/test/index.xml" rel="self" type="application/rss+xml" />
+        <language>en-us</language><atom:link href="https://victorchao996.github.io/Blog/categories/test/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>
