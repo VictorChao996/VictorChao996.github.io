@@ -38,17 +38,17 @@
                 href="https://victorchao996.github.io/page/"
                 />
   </url><url>
-    <loc>https://victorchao996.github.io/personalblog/archives/</loc>
+    <loc>https://victorchao996.github.io/archives/</loc>
     <lastmod>2022-06-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://victorchao996.github.io/en/personalblog/archives/"
+                href="https://victorchao996.github.io/en/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://victorchao996.github.io/personalblog/archives/"
+                href="https://victorchao996.github.io/archives/"
                 />
   </url><url>
     <loc>https://victorchao996.github.io/categories/</loc>
@@ -68,16 +68,16 @@
                 href="https://victorchao996.github.io/categories/"
                 />
   </url><url>
-    <loc>https://victorchao996.github.io/personalblog/links/</loc>
+    <loc>https://victorchao996.github.io/links/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://victorchao996.github.io/en/personalblog/links/"
+                href="https://victorchao996.github.io/en/links/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://victorchao996.github.io/personalblog/links/"
+                href="https://victorchao996.github.io/links/"
                 />
   </url><url>
     <loc>https://victorchao996.github.io/tags/</loc>
@@ -114,33 +114,33 @@
                 href="https://victorchao996.github.io/categories/test/"
                 />
   </url><url>
-    <loc>https://victorchao996.github.io/personalblog/search/</loc>
+    <loc>https://victorchao996.github.io/search/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://victorchao996.github.io/en/personalblog/search/"
+                href="https://victorchao996.github.io/en/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://victorchao996.github.io/personalblog/search/"
+                href="https://victorchao996.github.io/search/"
                 />
   </url><url>
-    <loc>https://victorchao996.github.io/personalblog/%E9%97%9C%E6%96%BC/</loc>
+    <loc>https://victorchao996.github.io/%E9%97%9C%E6%96%BC/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://victorchao996.github.io/en/personalblog/about/"
+                href="https://victorchao996.github.io/en/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://victorchao996.github.io/zh-cn/personalblog/%E5%85%B3%E4%BA%8E/"
+                href="https://victorchao996.github.io/zh-cn/%E5%85%B3%E4%BA%8E/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://victorchao996.github.io/personalblog/%E9%97%9C%E6%96%BC/"
+                href="https://victorchao996.github.io/%E9%97%9C%E6%96%BC/"
                 />
   </url>
 </urlset>
