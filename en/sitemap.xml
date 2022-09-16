@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://victorchao996.github.io/en/</loc>
-    <lastmod>2022-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -13,6 +13,97 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://victorchao996.github.io/en/"
+                />
+  </url><url>
+    <loc>https://victorchao996.github.io/en/categories/</loc>
+    <lastmod>2022-07-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://victorchao996.github.io/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://victorchao996.github.io/en/categories/"
+                />
+  </url><url>
+    <loc>https://victorchao996.github.io/en/post/</loc>
+    <lastmod>2022-07-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://victorchao996.github.io/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://victorchao996.github.io/en/post/"
+                />
+  </url><url>
+    <loc>https://victorchao996.github.io/en/categories/review/</loc>
+    <lastmod>2022-07-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://victorchao996.github.io/categories/review/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://victorchao996.github.io/en/categories/review/"
+                />
+  </url><url>
+    <loc>https://victorchao996.github.io/en/tags/</loc>
+    <lastmod>2022-07-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://victorchao996.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://victorchao996.github.io/en/tags/"
+                />
+  </url><url>
+    <loc>https://victorchao996.github.io/en/tags/%E5%A4%A7%E4%B8%89%E5%B0%88%E9%A1%8C/</loc>
+    <lastmod>2022-07-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://victorchao996.github.io/tags/%E5%A4%A7%E4%B8%89%E5%B0%88%E9%A1%8C/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://victorchao996.github.io/en/tags/%E5%A4%A7%E4%B8%89%E5%B0%88%E9%A1%8C/"
+                />
+  </url><url>
+    <loc>https://victorchao996.github.io/en/tags/%E8%B3%87%E5%B7%A5%E7%B3%BB/</loc>
+    <lastmod>2022-07-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://victorchao996.github.io/tags/%E8%B3%87%E5%B7%A5%E7%B3%BB/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://victorchao996.github.io/en/tags/%E8%B3%87%E5%B7%A5%E7%B3%BB/"
+                />
+  </url><url>
+    <loc>https://victorchao996.github.io/en/p/independent-study-project/</loc>
+    <lastmod>2022-07-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://victorchao996.github.io/p/independent-study-project/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://victorchao996.github.io/en/p/independent-study-project/"
                 />
   </url><url>
     <loc>https://victorchao996.github.io/en/about/</loc>
@@ -54,18 +145,6 @@
                 href="https://victorchao996.github.io/en/archives/"
                 />
   </url><url>
-    <loc>https://victorchao996.github.io/en/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://victorchao996.github.io/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://victorchao996.github.io/en/categories/"
-                />
-  </url><url>
     <loc>https://victorchao996.github.io/en/links/</loc>
     <xhtml:link
                 rel="alternate"
@@ -88,18 +167,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://victorchao996.github.io/en/search/"
-                />
-  </url><url>
-    <loc>https://victorchao996.github.io/en/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://victorchao996.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://victorchao996.github.io/en/tags/"
                 />
   </url>
 </urlset>
