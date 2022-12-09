@@ -6,7 +6,15 @@
         <description>Recent content in Categories on 趙冠霖|ZHAO,GUAN-LIN</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 27 Nov 2022 18:36:00 +0800</lastBuildDate><atom:link href="https://victorchao996.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 09 Dec 2022 18:36:00 +0800</lastBuildDate><atom:link href="https://victorchao996.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>面試趣</title>
+        <link>https://victorchao996.github.io/categories/interviewrecord/</link>
+        <pubDate>Fri, 09 Dec 2022 18:36:00 +0800</pubDate>
+        
+        <guid>https://victorchao996.github.io/categories/interviewrecord/</guid>
+        <description>&lt;img src="https://victorchao996.github.io/categories/interviewrecord/interview.jpg" alt="Featured image of post 面試趣" /&gt;</description>
+        </item>
+        <item>
         <title>前端學習之路</title>
         <link>https://victorchao996.github.io/categories/frontend_journey/</link>
         <pubDate>Sun, 27 Nov 2022 18:36:00 +0800</pubDate>
