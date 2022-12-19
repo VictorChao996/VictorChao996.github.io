@@ -6,29 +6,219 @@
         <description>Recent content in 前端學習之路 on 趙冠霖|ZHAO,GUAN-LIN</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 27 Nov 2022 18:36:00 +0800</lastBuildDate><atom:link href="https://victorchao996.github.io/categories/frontend_journey/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>前端學習之路-旅程開始</title>
-        <link>https://victorchao996.github.io/p/frontend_learning-journey-begin/</link>
-        <pubDate>Sun, 27 Nov 2022 18:36:00 +0800</pubDate>
+        <lastBuildDate>Sun, 18 Dec 2022 18:00:00 +0800</lastBuildDate><atom:link href="https://victorchao996.github.io/categories/frontend_journey/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>第二周-JavaScript基礎&amp;進階</title>
+        <link>https://victorchao996.github.io/p/frontend_learning-second-week/</link>
+        <pubDate>Sun, 18 Dec 2022 18:00:00 +0800</pubDate>
         
-        <guid>https://victorchao996.github.io/p/frontend_learning-journey-begin/</guid>
-        <description>&lt;img src="https://victorchao996.github.io/p/frontend_learning-journey-begin/path.jpg" alt="Featured image of post 前端學習之路-旅程開始" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;這一篇文是前端學習之路的開篇，最近這段時間被升學的事情搞得焦頭爛額，目前算是告一段落。面對比以往都還要嚴重的低潮期，希望自己可以找一點事情做並且順便轉移自己的注意力。&lt;/p&gt;
-&lt;h2 id=&#34;自學回顧&#34;&gt;自學回顧&lt;/h2&gt;
-&lt;p&gt;回顧大學前三年課外自學的技術，無論是製作遊戲用的Unity，Android 平台app開發，甚至是跨平台框架flutter都有畫面製作的部分。我發現自己投入最多時間的項目都是介面開發，&lt;strong&gt;比起程式邏輯、數據儲存、資料庫操作，我更喜歡畫面的呈現&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;在製作遊戲時我花了不少時間在UI介面的擺放、虛擬鏡頭的移動、動畫上，而在app開發上介面也是我花最多時間琢磨的。從Unity的UI系統中我學到不少觀念，如:&lt;strong&gt;Anchor、縮放、不同resolution&lt;/strong&gt;等；而在app開發上則是學到: &lt;strong&gt;設定基準的位置(start, end, top, bottom)、Margin&amp;amp;Padding、Material Design&lt;/strong&gt;等觀念。&lt;/p&gt;
-&lt;p&gt;先前對於前端有著不少的誤解，再加上各種巧合(諸如系上沒有相關課程)，所以沒有實際探索過前端工程這方面的知識。但在經過這兩三周的學習後我才發現，在UI介面開發上的設定都有著異曲同工之妙，或者反過來說，這些UI設計的邏輯設定多少都有受到網頁設計上style 設定的影響。在學習CSS的過程也有種倒吃甘蔗的感覺，見過不同的使用情況對於理解CSS的各項prperty有顯著的幫助。&lt;/p&gt;
-&lt;p&gt;舉例來說: CSS flexbox 中的 justify-content 或 align-items 設定就會讓我想到 flutter 框架中 widget 中的命名參數MainAxisAlignment 或 CrossAxisAlignment。而 flutter 的命名&amp;amp;設定相對來說較為直觀，因為可以立即看出設定的是主軸(main axis)還是切軸(cross axis)。&lt;/p&gt;
-&lt;h2 id=&#34;新的學習之路&#34;&gt;新的學習之路&lt;/h2&gt;
-&lt;p&gt;為了鞭策自己可以學好前端的相關的技術，我給自己的目標是&lt;strong&gt;每周至少發布一篇學習的總結文&lt;/strong&gt;。內容不限技術、經驗談、或實作開發紀錄。希望能在記錄之餘，還可以檢驗自己是否真的有學到新的知識，避免陷入有在持續成長的謊言中。&lt;/p&gt;
+        <guid>https://victorchao996.github.io/p/frontend_learning-second-week/</guid>
+        <description>&lt;img src="https://victorchao996.github.io/p/frontend_learning-second-week/JavaScript.jpg" alt="Featured image of post 第二周-JavaScript基礎&amp;進階" /&gt;&lt;h2 id=&#34;挑戰破功&#34;&gt;挑戰破功?&lt;/h2&gt;
+&lt;p&gt;上週因為在準備AppWors School Campus Program 面試的關係就沒有出文章(&lt;del&gt;挑戰才剛開始就失敗&lt;/del&gt;)，這周要好好來惡補一下進度。在前端學習的部分並沒有實際的計畫學習的內容，只有根據不熟的方面加減看一下。&lt;/p&gt;
+&lt;p&gt;這兩周課餘時間主要集中在JavaScript 進階 與 前端框架Vue 的學習，關於學習的內容我會拆成兩篇文來寫(剛好兩周各兩篇)。&lt;/p&gt;
+&lt;h2 id=&#34;主要學習內容&#34;&gt;主要學習內容&lt;/h2&gt;
+&lt;h3 id=&#34;javascript-基礎&#34;&gt;JavaScript 基礎&lt;/h3&gt;
+&lt;p&gt;程式語言共有的基礎知識: 變數、陣列、迴圈、條件判斷式、function都大同小異，這方面沒什麼太大的問題，比較特別的是JavaScript的資料型別還分為六種基本(primitives) &amp;amp; Object，而最重要的就是Object.&lt;/p&gt;
+&lt;h4 id=&#34;object&#34;&gt;Object&lt;/h4&gt;
+&lt;p&gt;學習 Object 對完整了解 JavaScript 來說非常重要，在JavaScript中幾乎所有東西都可以是Object 。Object由 property(name) &amp;amp; Value 組成，可對應至其他程式語言中的 key-value pair 結構，如: Python 中的 Dictionaries、C 中的 Hash tables。因為其內容是由屬性(property)&amp;amp;值(value)所組成，具有易於閱讀的和處理的優勢，於是後來就設計出鼎鼎大名的JSON格式 (JavaScript Object Notation)。&lt;/p&gt;
+&lt;p&gt;網路應用的資料傳輸通常使用JSON格式，例如: server端傳送網頁資源到client端，client端瀏覽器再根據接收到的渲染網頁。了解JSON格式並熟悉&amp;quot;解析&amp;amp;字串化&amp;quot;能使之後學習使用 Fetch API 時更加容易。&lt;/p&gt;
+&lt;h3 id=&#34;javascript-進階&#34;&gt;JavaScript 進階&lt;/h3&gt;
+&lt;p&gt;跟隨w3school官網的JS教學看看，並把Youtube上的進階教學影片看過一遍，這些主題是:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nested Funtion&lt;/li&gt;
+&lt;li&gt;Closure&lt;/li&gt;
+&lt;li&gt;this keyword&lt;/li&gt;
+&lt;li&gt;Class&lt;/li&gt;
+&lt;li&gt;Asynchronous JavaScript
+&lt;ul&gt;
+&lt;li&gt;Timeouts and Interval&lt;/li&gt;
+&lt;li&gt;Callbacks&lt;/li&gt;
+&lt;li&gt;Promise&lt;/li&gt;
+&lt;li&gt;async &amp;amp; await&lt;/li&gt;
+&lt;li&gt;Event Loop&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Function 的進階應用對我來說是很新的觀念，像是&lt;strong&gt;nested function &amp;amp; Closure&lt;/strong&gt;都是之前寫過的程式語言中沒有接觸過的概念。 &amp;ldquo;使用Closure達到funtion中的private variable 這件事&amp;quot;對於本身是從較為嚴謹的C++作為入門程式語言的我來說感到不可思議，因為這牽扯到var關鍵字所建立的變數是function scope，與其他語言的block scope不同。&lt;/p&gt;
+&lt;p&gt;另一個奇妙的點是通常function內的local 變數只會在function執行期間 &amp;ldquo;存在&amp;rdquo; ，然而 JavaScript  Closure的概念使得當nested function中 外部的function被invoked時，&lt;strong&gt;該function 的 lexical enviroment 都會被建立&amp;amp;保留&lt;/strong&gt;，而local variable就包含在此lexical enviroment中。同一個function closure所形成的不同變數(常數)就具有不同的lexical enviroment，根據這個特性就可以達到類似OOP的概念。&lt;/p&gt;
+&lt;p&gt;除了function的新概念外，還包含this 關鍵字。若是從其他OOP(物件導向)語言轉過來學習JavaScript的人肯定會被this的概念混淆。this根據invoke的時機會有&lt;strong&gt;各種不同的結果&lt;/strong&gt;，不過我也沒有仔細研究一遍，唯一能確定的是 (&lt;del&gt;很多人都很困惑&lt;/del&gt; )關於this的討論會另外寫成一篇文，在這邊就先不討論。&lt;/p&gt;
+&lt;h3 id=&#34;asynchronous-javascript&#34;&gt;Asynchronous JavaScript&lt;/h3&gt;
+&lt;p&gt;JavaScript另一個重要的進階主題是&lt;strong&gt;同步&amp;amp;非同步&lt;/strong&gt;程式。
+程式初學者學到的程式執行順序: 一行一行，從上而下，依序執行 就是最常見的synchronous程式。這類程式雖然直觀，但是當某一行指令或某一個function執行的時間較長時，就會使得程式阻塞(blocking)。但在Event 很多的網頁應用中，我們當然不希望網頁當掉或是某一個Button 按下去沒反應，因此就有了&lt;strong&gt;Asynchronous 非同步&lt;/strong&gt;的概念。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;註: JavaScript 本身是synchronous、Blocked、single-thread language。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;timeouts--intervals&#34;&gt;Timeouts &amp;amp; Intervals&lt;/h4&gt;
+&lt;p&gt;藉由&lt;strong&gt;Web API&lt;/strong&gt; 提供的Timeout method我們可以實現類似asynchronous的效果。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-JavaScript&#34; data-lang=&#34;JavaScript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;world\n&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;setTimeout&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Hello&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;使用&lt;code&gt;setTimeout( )&lt;/code&gt; 可以讓function在經過特定時間後才執行，而且在等待的時間內不會阻擋到後面程式碼的執行。&lt;code&gt;setInterval( )&lt;/code&gt; 也是類似的觀念，不過會持續執行直到程式結束或interval被取消。&lt;/p&gt;
+&lt;p&gt;這邊需要特別注意&lt;strong&gt;等待時間是minimum delay 而不是guaranteed delay&lt;/strong&gt;(這牽扯到Web API 與 JavaScript底層的運作)，所以即使寫成 &lt;code&gt;setTimeout(fun, 0)&lt;/code&gt; 也不能保證function會馬上執行。&lt;/p&gt;
+&lt;h4 id=&#34;callbacks&#34;&gt;Callbacks&lt;/h4&gt;
+&lt;p&gt;callback如果單看中文翻譯名稱可能比較難懂，簡單來說就是一個函式接受另一個函式當作參數傳入，這麼做的好處就是可以讓函式控制參數函式的執行時機。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;案例一&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-JavaScript&#34; data-lang=&#34;JavaScript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;First&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Fn&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nx&#34;&gt;Fn&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Second&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;First&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Second&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//執行結果:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//1 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//2
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;這時候很多人可能會想，那為何不直接寫成這樣就好?&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-JavaScript&#34; data-lang=&#34;JavaScript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;First&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nx&#34;&gt;Fn&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Second&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;First&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;Second&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//執行結果與上相同
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;雖然執行結果相同，但問題是當First Function的執行時間較長時會造成程式Block，而使用&lt;code&gt;setTimeout()&lt;/code&gt; 又會造成順序不對(&lt;code&gt;Second()&lt;/code&gt;先執行)。將函式寫成Callback的形式就可以搭配&lt;code&gt;setTimeout()&lt;/code&gt; 使用，&lt;strong&gt;進而確保程式在非同步執行的情況下，順序是對的&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;Callback雖然方便使用，但是當有過多的callback function會造成複雜的巢狀結構，使得程式碼變得&lt;strong&gt;不易閱讀&amp;amp;維護&lt;/strong&gt;。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-JavaScript&#34; data-lang=&#34;JavaScript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;fetchCurrentUser&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`api/user`&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;result&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nx&#34;&gt;fetchFollowersByUserId&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`api/followers/&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;result&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;userId&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;result&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;nx&#34;&gt;fetchFollowerInterests&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`api/interests/&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;result&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;interstId&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;result&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;			&lt;span class=&#34;c1&#34;&gt;//直到取得需要的資源.....
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;		&lt;span class=&#34;p&#34;&gt;})&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;p&#34;&gt;})&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;})&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;偏偏在我Fetch data的過程中(request)很常會需要使用到先前的request，進而造成&lt;strong&gt;Callback Hell&lt;/strong&gt;。
+為了避免callback hell於是後來又延伸出Promise的概念。&lt;/p&gt;
+&lt;h4 id=&#34;promises&#34;&gt;Promises&lt;/h4&gt;
+&lt;p&gt;promise 是一個可以有不同狀態的JavaScript Object，分別是&lt;strong&gt;pending, fulfilled, rejected&lt;/strong&gt;，我們可以依據不同的狀態來處理asynchronous code。Promise最大的用處是他提供&lt;code&gt;.then()&lt;/code&gt; 與 &lt;code&gt;.catch()&lt;/code&gt; 等method，而這兩者的回傳值皆為promise，可以方便地進行**鍊式調用(Chaning)*。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-JavaScript&#34; data-lang=&#34;JavaScript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;promise&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;fecthCurrentUser&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;api/user&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;promise&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;then&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;result&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;fetchFollowerSByUserId&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`api/followers/&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;result&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;userId&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;then&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;result&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;fetchFollowerInterests&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`api/interests/&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;result&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;interstId&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;//持續直到取得需要的資源....
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;catch&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;cm&#34;&gt;/*rejected 處理*/&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;使用promise可以很好的避免callback Hell，並且方便程式開發者撰寫Error Handling。&lt;/p&gt;
+&lt;p&gt;除此之外promise還提供一些實用method 如 &lt;code&gt;Promise.all( )&lt;/code&gt; , &lt;code&gt;Promise.allSettled( )&lt;/code&gt;, &lt;code&gt;Promise.race()&lt;/code&gt; 來滿足現今網頁各種複雜的request。&lt;/p&gt;
+&lt;p&gt;關於Promise的內容可以寫好幾篇文章了，對於初學非同步程式的新手一次接觸這麼多的概念會需要不少時間消化，幸好當初在自學Flutter 框架的過程中就先接觸並且學習類似的觀念(在Dart 語言中叫做Future)，以至於我現在學習起還能應付得過來。關於非同步程式的學習筆記之後有空會再統整成新的文章來發表。&lt;/p&gt;
+&lt;h4 id=&#34;asyncawait&#34;&gt;async/await&lt;/h4&gt;
+&lt;p&gt;有了Promise的概念後，接者就要提到async/await。
+用async關鍵字定義的function 會成為async function，其用意是使得function的回傳值為Promise；
+而await關鍵字則能讓程式等待 async functoin 的 return 結果。&lt;/p&gt;
+&lt;p&gt;在這兩個關鍵字的搭配下就能&lt;strong&gt;用synchronous code的寫法來撰寫asynchronous code&lt;/strong&gt;，來看以下範例。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-JavaScript&#34; data-lang=&#34;JavaScript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kr&#34;&gt;async&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;fetchData&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;user&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kr&#34;&gt;await&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;fetchCurrentUser&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`api/user`&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;followers&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kr&#34;&gt;await&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;fetchFollowersByUserId&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`api/followers/&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;result&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;userId&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;interests&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kr&#34;&gt;await&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;fetchFollowerInterests&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`api/interests/&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;result&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;followerId&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;//持續直到取得需要的資源....
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;這樣的方法使得撰寫程式可以更直觀，並且可以直接套用try&amp;hellip;catch() 來做例外處理。&lt;/p&gt;
+&lt;h3 id=&#34;其他學習&#34;&gt;其他學習&lt;/h3&gt;
+&lt;p&gt;再有了上述提到各種基本概念後再去觀看Fetch API 的教學影片比較容易上手，因為涉及 JSON、Object、asynchronous等主題。不過我目前對於Fetch API 的了解僅止於 HTTP request ，詳細的應用還有待進一步學習。&lt;/p&gt;
 &lt;h2 id=&#34;總結&#34;&gt;總結&lt;/h2&gt;
-&lt;p&gt;這學期修的課程比較少，期許自己不要把時間浪費在一些不會讓自己增長的娛樂上，所以給自己設下這樣的挑戰，就把這挑戰當作是一個比較輕鬆的鐵人賽吧，&lt;strong&gt;目標是30周，連續不間斷的產出前端相關的文章&lt;/strong&gt;。希望三十周後會我會替自己設下的挑戰而感到高興，加油 !&lt;/p&gt;
+&lt;h3 id=&#34;撰寫文字&#34;&gt;撰寫文字&lt;/h3&gt;
+&lt;p&gt;我發現若在學習的過程中沒有主動做筆記，再撰寫文章的當下要寫出學習的總結整理還滿困難的。&lt;/p&gt;
+&lt;p&gt;再撰寫的過程還要重新打開已經看過的文章or影片複習，這與我理想中的寫作有點出入。以往的想法都是學習完成後便可以順利的寫下總結文章，然而事實卻是: &lt;strong&gt;邊review，邊想總結，邊寫下文字&lt;/strong&gt;，這樣做花費了大量的時間。&lt;/p&gt;
+&lt;p&gt;在&lt;em&gt;&lt;strong&gt;卡片盒筆記&lt;/strong&gt;&lt;/em&gt; 這本書中有提到，理想的寫作過程應該為學習的當下就在做統整筆記並與其他的知識做一個連結。而產出文章的方法為整理總結好的文字組合成段落&amp;amp;文章，換句話說，最後的步驟反而是最簡單的。若依據傳統的寫作方法從空白的紙張開始寫，會花上不少時間。&lt;del&gt;這篇文章的內容大概花了我超過五小時&lt;/del&gt;&lt;br&gt;
+不過我也還在嘗試新的產出方法，期望自己在學習之於也能產出高品質的文章給他人看。&lt;/p&gt;
+&lt;h3 id=&#34;持續學習&#34;&gt;持續學習&lt;/h3&gt;
+&lt;p&gt;這篇紀錄的概念只佔前端工程的冰山一角，當真正投入心力學習就會發現涉及到的技術很廣，並且水很深。唯有持續不斷的學習才能在快速變化的前端工程領域不被淘汰。目前打算將更詳細的技術筆記單獨拉出來成為新的系列文章，這系列就專注在自己每周前端學習總結這樣。&lt;/p&gt;
+&lt;p&gt;那第二周的學習內容總結就到這邊，擱置的第三周文章我會盡快補齊(大概?)。&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>第一周-前端學習首月&amp;意外插曲</title>
         <link>https://victorchao996.github.io/p/frontend_learning-first-week/</link>
-        <pubDate>Fri, 04 Nov 2022 18:00:00 +0800</pubDate>
+        <pubDate>Sun, 04 Dec 2022 18:00:00 +0800</pubDate>
         
         <guid>https://victorchao996.github.io/p/frontend_learning-first-week/</guid>
         <description>&lt;img src="https://victorchao996.github.io/p/frontend_learning-first-week/appworks_school.png" alt="Featured image of post 第一周-前端學習首月&amp;意外插曲" /&gt;&lt;p&gt;封面圖片來源: &lt;a class=&#34;link&#34; href=&#34;https://appworks.tw/appworks-school-ios-class-1/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -77,6 +267,25 @@
 &lt;p&gt;無論最終結果如何，我都心懷感激之情，謝謝這兩周努力準備的我，我學到很多。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
+        <title>前端學習之路-旅程開始</title>
+        <link>https://victorchao996.github.io/p/frontend_learning-journey-begin/</link>
+        <pubDate>Sun, 27 Nov 2022 18:36:00 +0800</pubDate>
+        
+        <guid>https://victorchao996.github.io/p/frontend_learning-journey-begin/</guid>
+        <description>&lt;img src="https://victorchao996.github.io/p/frontend_learning-journey-begin/path.jpg" alt="Featured image of post 前端學習之路-旅程開始" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;這一篇文是前端學習之路的開篇，最近這段時間被升學的事情搞得焦頭爛額，目前算是告一段落。面對比以往都還要嚴重的低潮期，希望自己可以找一點事情做並且順便轉移自己的注意力。&lt;/p&gt;
+&lt;h2 id=&#34;自學回顧&#34;&gt;自學回顧&lt;/h2&gt;
+&lt;p&gt;回顧大學前三年課外自學的技術，無論是製作遊戲用的Unity，Android 平台app開發，甚至是跨平台框架flutter都有畫面製作的部分。我發現自己投入最多時間的項目都是介面開發，&lt;strong&gt;比起程式邏輯、數據儲存、資料庫操作，我更喜歡畫面的呈現&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;在製作遊戲時我花了不少時間在UI介面的擺放、虛擬鏡頭的移動、動畫上，而在app開發上介面也是我花最多時間琢磨的。從Unity的UI系統中我學到不少觀念，如:&lt;strong&gt;Anchor、縮放、不同resolution&lt;/strong&gt;等；而在app開發上則是學到: &lt;strong&gt;設定基準的位置(start, end, top, bottom)、Margin&amp;amp;Padding、Material Design&lt;/strong&gt;等觀念。&lt;/p&gt;
+&lt;p&gt;先前對於前端有著不少的誤解，再加上各種巧合(諸如系上沒有相關課程)，所以沒有實際探索過前端工程這方面的知識。但在經過這兩三周的學習後我才發現，在UI介面開發上的設定都有著異曲同工之妙，或者反過來說，這些UI設計的邏輯設定多少都有受到網頁設計上style 設定的影響。在學習CSS的過程也有種倒吃甘蔗的感覺，見過不同的使用情況對於理解CSS的各項prperty有顯著的幫助。&lt;/p&gt;
+&lt;p&gt;舉例來說: CSS flexbox 中的 justify-content 或 align-items 設定就會讓我想到 flutter 框架中 widget 中的命名參數MainAxisAlignment 或 CrossAxisAlignment。而 flutter 的命名&amp;amp;設定相對來說較為直觀，因為可以立即看出設定的是主軸(main axis)還是切軸(cross axis)。&lt;/p&gt;
+&lt;h2 id=&#34;新的學習之路&#34;&gt;新的學習之路&lt;/h2&gt;
+&lt;p&gt;為了鞭策自己可以學好前端的相關的技術，我給自己的目標是&lt;strong&gt;每周至少發布一篇學習的總結文&lt;/strong&gt;。內容不限技術、經驗談、或實作開發紀錄。希望能在記錄之餘，還可以檢驗自己是否真的有學到新的知識，避免陷入有在持續成長的謊言中。&lt;/p&gt;
+&lt;h2 id=&#34;總結&#34;&gt;總結&lt;/h2&gt;
+&lt;p&gt;這學期修的課程比較少，期許自己不要把時間浪費在一些不會讓自己增長的娛樂上，所以給自己設下這樣的挑戰，就把這挑戰當作是一個比較輕鬆的鐵人賽吧，&lt;strong&gt;目標是30周，連續不間斷的產出前端相關的文章&lt;/strong&gt;。希望三十周後會我會替自己設下的挑戰而感到高興，加油 !&lt;/p&gt;
 </description>
         </item>
         
