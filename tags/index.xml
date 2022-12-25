@@ -6,18 +6,10 @@
         <description>Recent content in Tags on 趙冠霖|ZHAO,GUAN-LIN</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 18 Dec 2022 18:00:00 +0800</lastBuildDate><atom:link href="https://victorchao996.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>books</title>
-        <link>https://victorchao996.github.io/tags/books/</link>
-        <pubDate>Sun, 18 Dec 2022 18:00:00 +0800</pubDate>
-        
-        <guid>https://victorchao996.github.io/tags/books/</guid>
-        <description></description>
-        </item>
-        <item>
+        <lastBuildDate>Sun, 25 Dec 2022 18:00:00 +0800</lastBuildDate><atom:link href="https://victorchao996.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Challenge</title>
         <link>https://victorchao996.github.io/tags/challenge/</link>
-        <pubDate>Sun, 18 Dec 2022 18:00:00 +0800</pubDate>
+        <pubDate>Sun, 25 Dec 2022 18:00:00 +0800</pubDate>
         
         <guid>https://victorchao996.github.io/tags/challenge/</guid>
         <description></description>
@@ -25,9 +17,25 @@
         <item>
         <title>JavaScript</title>
         <link>https://victorchao996.github.io/tags/javascript/</link>
-        <pubDate>Sun, 18 Dec 2022 18:00:00 +0800</pubDate>
+        <pubDate>Sun, 25 Dec 2022 18:00:00 +0800</pubDate>
         
         <guid>https://victorchao996.github.io/tags/javascript/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Vue</title>
+        <link>https://victorchao996.github.io/tags/vue/</link>
+        <pubDate>Sun, 25 Dec 2022 18:00:00 +0800</pubDate>
+        
+        <guid>https://victorchao996.github.io/tags/vue/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>books</title>
+        <link>https://victorchao996.github.io/tags/books/</link>
+        <pubDate>Sun, 18 Dec 2022 18:00:00 +0800</pubDate>
+        
+        <guid>https://victorchao996.github.io/tags/books/</guid>
         <description></description>
         </item>
         <item>
