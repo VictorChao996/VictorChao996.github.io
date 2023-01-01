@@ -6,7 +6,15 @@
         <description>Recent content in Categories on 趙冠霖|ZHAO,GUAN-LIN</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 25 Dec 2022 18:00:00 +0800</lastBuildDate><atom:link href="https://victorchao996.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 31 Dec 2022 16:17:03 +0800</lastBuildDate><atom:link href="https://victorchao996.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Review 回顧</title>
+        <link>https://victorchao996.github.io/categories/review/</link>
+        <pubDate>Sat, 31 Dec 2022 16:17:03 +0800</pubDate>
+        
+        <guid>https://victorchao996.github.io/categories/review/</guid>
+        <description>&lt;img src="https://victorchao996.github.io/categories/review/review.jpg" alt="Featured image of post Review 回顧" /&gt;</description>
+        </item>
+        <item>
         <title>前端學習之路</title>
         <link>https://victorchao996.github.io/categories/frontend_journey/</link>
         <pubDate>Sun, 25 Dec 2022 18:00:00 +0800</pubDate>
@@ -37,14 +45,6 @@
         
         <guid>https://victorchao996.github.io/categories/computerscienceapplication/</guid>
         <description>&lt;img src="https://victorchao996.github.io/categories/computerscienceapplication/computer.jpg" alt="Featured image of post 電腦科學的應用" /&gt;</description>
-        </item>
-        <item>
-        <title>Review 回顧</title>
-        <link>https://victorchao996.github.io/categories/review/</link>
-        <pubDate>Sun, 03 Jul 2022 16:17:03 +0800</pubDate>
-        
-        <guid>https://victorchao996.github.io/categories/review/</guid>
-        <description>&lt;img src="https://victorchao996.github.io/categories/review/review.jpg" alt="Featured image of post Review 回顧" /&gt;</description>
         </item>
         <item>
         <title>Test</title>
