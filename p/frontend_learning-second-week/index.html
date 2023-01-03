@@ -8,13 +8,26 @@
 <link rel="stylesheet" href="/scss/style.min.a8dd000923453ffdc61da1b65e44a788a4389358ffc866b1520ea43f79a4e354.css"><meta property='og:title' content='第二周-JavaScript基礎&amp;進階'>
 <meta property='og:description' content='前端之路挑戰第二周，關於JavaScript的一些內容....'>
 <meta property='og:url' content='https://victorchao996.github.io/p/frontend_learning-second-week/'>
-<meta property='og:site_name' content='趙冠霖|ZHAO,GUAN-LIN'>
+<meta property='og:site_name' content='Victor&#39;s Blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Challenge' /><meta property='article:tag' content='JavaScript' /><meta property='article:published_time' content='2022-12-18T18:00:00&#43;08:00'/><meta property='article:modified_time' content='2022-12-18T00:00:00&#43;00:00'/><meta property='og:image' content='https://victorchao996.github.io/p/frontend_learning-second-week/JavaScript.jpg' />
 <meta name="twitter:title" content="第二周-JavaScript基礎&amp;進階">
 <meta name="twitter:description" content="前端之路挑戰第二周，關於JavaScript的一些內容...."><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://victorchao996.github.io/p/frontend_learning-second-week/JavaScript.jpg' />
-    <link rel="shortcut icon" href="img/favicon_io/favicon.ico" />
+<link rel="shortcut icon" href="img/favicon_io/favicon.ico" />
 
+
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CX6E9WC1NJ"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-CX6E9WC1NJ', { 'anonymize_ip': false });
+}
+</script>
+</head>
     </head>
     <body class="
     article-page
@@ -58,8 +71,8 @@
                     
                     
                         
-                        <img src="/img/avatar_victor_hu2cfdec7d2b90eca01e74865b3bb7baa8_122120_300x0_resize_q75_box.jpg" width="300"
-                            height="298" class="site-logo" loading="lazy" alt="Avatar">
+                        <img src="/img/avatar_victor4_huba6912e9e3d574393228032081d562fd_497795_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
                 </a>
@@ -69,7 +82,7 @@
         
         
         <div class="site-meta">
-            <h1 class="site-name"><a href="/">趙冠霖|ZHAO,GUAN-LIN</a></h1>
+            <h1 class="site-name"><a href="/">Victor&#39;s Blog</a></h1>
             <h2 class="site-description">嗨你好，我是Victor，目前是資訊工程學系大四的學生。</h2>
         </div>
     </header><ol class="social-menu">
@@ -133,7 +146,7 @@
         
 
         <li >
-            <a href='/%E9%97%9C%E6%96%BC/' >
+            <a href='/%E9%97%9C%E6%96%BC%E4%BD%9C%E8%80%85/' >
                 
                 
                 
@@ -146,7 +159,7 @@
 
 
                 
-                <span>關於</span>
+                <span>關於作者</span>
             </a>
         </li>
         
@@ -316,6 +329,20 @@
         
 
         
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    閱讀時間: 8 分鐘
+                </time>
+            </div>
+        
     </footer>
     
 
@@ -364,22 +391,22 @@
 </blockquote>
 <h4 id="timeouts--intervals">Timeouts &amp; Intervals</h4>
 <p>藉由<strong>Web API</strong> 提供的Timeout method我們可以實現類似asynchronous的效果。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
 </span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">hello</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;world\n&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="nx">setTimeout</span><span class="p">(</span><span class="nx">hello</span><span class="p">,</span> <span class="mi">1000</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">);</span>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">hello</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;world\n&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">setTimeout</span>(<span style="color:#a6e22e">hello</span>, <span style="color:#ae81ff">1000</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Hello&#39;</span>);
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>使用<code>setTimeout( )</code> 可以讓function在經過特定時間後才執行，而且在等待的時間內不會阻擋到後面程式碼的執行。<code>setInterval( )</code> 也是類似的觀念，不過會持續執行直到程式結束或interval被取消。</p>
@@ -389,105 +416,105 @@
 <ul>
 <li>案例一</li>
 </ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
 </span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">First</span><span class="p">(</span><span class="nx">Fn</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">Fn</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">Second</span><span class="p">(){</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="nx">First</span><span class="p">(</span><span class="nx">Second</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="c1">//執行結果:
-</span></span></span><span class="line"><span class="cl"><span class="c1">//1 
-</span></span></span><span class="line"><span class="cl"><span class="c1">//2
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">First</span>(<span style="color:#a6e22e">Fn</span>){
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Fn</span>();
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Second</span>(){
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">2</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">First</span>(<span style="color:#a6e22e">Second</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//執行結果:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//1 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//2
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>這時候很多人可能會想，那為何不直接寫成這樣就好?</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
 </span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">First</span><span class="p">(){</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">Fn</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">Second</span><span class="p">(){</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="nx">First</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="nx">Second</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">//執行結果與上相同
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">First</span>(){
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Fn</span>();
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Second</span>(){
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">2</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">First</span>()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Second</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//執行結果與上相同
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>雖然執行結果相同，但問題是當First Function的執行時間較長時會造成程式Block，而使用<code>setTimeout()</code> 又會造成順序不對(<code>Second()</code>先執行)。將函式寫成Callback的形式就可以搭配<code>setTimeout()</code> 使用，<strong>進而確保程式在非同步執行的情況下，順序是對的</strong>。</p>
 <p>Callback雖然方便使用，但是當有過多的callback function會造成複雜的巢狀結構，使得程式碼變得<strong>不易閱讀&amp;維護</strong>。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
 </span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="nx">fetchCurrentUser</span><span class="p">(</span><span class="sb">`api/user`</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">result</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">fetchFollowersByUserId</span><span class="p">(</span><span class="sb">`api/followers/</span><span class="si">${</span><span class="nx">result</span><span class="p">.</span><span class="nx">userId</span><span class="si">}</span><span class="sb">`</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">result</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">		<span class="nx">fetchFollowerInterests</span><span class="p">(</span><span class="sb">`api/interests/</span><span class="si">${</span><span class="nx">result</span><span class="p">.</span><span class="nx">interstId</span><span class="si">}</span><span class="sb">`</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">result</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">			<span class="c1">//直到取得需要的資源.....
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>		<span class="p">})</span>
-</span></span><span class="line"><span class="cl">	<span class="p">})</span>
-</span></span><span class="line"><span class="cl"><span class="p">})</span>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#a6e22e">fetchCurrentUser</span>(<span style="color:#e6db74">`api/user`</span>, <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">result</span>){
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">fetchFollowersByUserId</span>(<span style="color:#e6db74">`api/followers/</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">userId</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>, <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">result</span>){
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">fetchFollowerInterests</span>(<span style="color:#e6db74">`api/interests/</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">interstId</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>, <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">result</span>){
+</span></span><span style="display:flex;"><span>			<span style="color:#75715e">//直到取得需要的資源.....
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>		})
+</span></span><span style="display:flex;"><span>	})
+</span></span><span style="display:flex;"><span>})
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>，進而造成<strong>Callback Hell</strong>。
 為了避免callback hell於是後來又延伸出Promise的概念。</p>
 <h4 id="promises">Promises</h4>
-<p>promise 是一個可以有不同狀態的JavaScript Object，分別是<strong>pending, fulfilled, rejected</strong>，我們可以依據不同的狀態來處理asynchronous code。Promise最大的用處是他提供<code>.then()</code> 與 <code>.catch()</code> 等method，而這兩者的回傳值皆為promise，可以方便地進行**鍊式調用(Chaning)*。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
+<p>promise 是一個可以有不同狀態的JavaScript Object，分別是<strong>pending, fulfilled, rejected</strong>，我們可以依據不同的狀態來處理asynchronous code。Promise最大的用處是他提供<code>.then()</code> 與 <code>.catch()</code> 等method，而這兩者的回傳值皆為promise，可以方便地進行 <em>鍊式調用(Chaning)</em>。</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
 </span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">promise</span> <span class="o">=</span> <span class="nx">fecthCurrentUser</span><span class="p">(</span><span class="s1">&#39;api/user&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="nx">promise</span>
-</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">result</span> <span class="p">=&gt;</span> <span class="nx">fetchFollowerSByUserId</span><span class="p">(</span><span class="sb">`api/followers/</span><span class="si">${</span><span class="nx">result</span><span class="p">.</span><span class="nx">userId</span><span class="si">}</span><span class="sb">`</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">result</span> <span class="p">=&gt;</span> <span class="nx">fetchFollowerInterests</span><span class="p">(</span><span class="sb">`api/interests/</span><span class="si">${</span><span class="nx">result</span><span class="p">.</span><span class="nx">interstId</span><span class="si">}</span><span class="sb">`</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">//持續直到取得需要的資源....
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="cm">/*rejected 處理*/</span><span class="p">)</span>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">promise</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">fecthCurrentUser</span>(<span style="color:#e6db74">&#39;api/user&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">promise</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">result</span> =&gt; <span style="color:#a6e22e">fetchFollowerSByUserId</span>(<span style="color:#e6db74">`api/followers/</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">userId</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>))
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">result</span> =&gt; <span style="color:#a6e22e">fetchFollowerInterests</span>(<span style="color:#e6db74">`api/interests/</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">interstId</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>))
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//持續直到取得需要的資源....
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#66d9ef">catch</span>(<span style="color:#75715e">/*rejected 處理*/</span>)
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>使用promise可以很好的避免callback Hell，並且方便程式開發者撰寫Error Handling。</p>
@@ -498,22 +525,22 @@
 用async關鍵字定義的function 會成為async function，其用意是使得function的回傳值為Promise；
 而await關鍵字則能讓程式等待 async functoin 的 return 結果。</p>
 <p>在這兩個關鍵字的搭配下就能<strong>用synchronous code的寫法來撰寫asynchronous code</strong>，來看以下範例。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
 </span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kr">async</span> <span class="kd">function</span> <span class="nx">fetchData</span><span class="p">(){</span>
-</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">user</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">fetchCurrentUser</span><span class="p">(</span><span class="sb">`api/user`</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">followers</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">fetchFollowersByUserId</span><span class="p">(</span><span class="sb">`api/followers/</span><span class="si">${</span><span class="nx">result</span><span class="p">.</span><span class="nx">userId</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">interests</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">fetchFollowerInterests</span><span class="p">(</span><span class="sb">`api/interests/</span><span class="si">${</span><span class="nx">result</span><span class="p">.</span><span class="nx">followerId</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">//持續直到取得需要的資源....
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fetchData</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">user</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">fetchCurrentUser</span>(<span style="color:#e6db74">`api/user`</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">followers</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">fetchFollowersByUserId</span>(<span style="color:#e6db74">`api/followers/</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">userId</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">interests</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">fetchFollowerInterests</span>(<span style="color:#e6db74">`api/interests/</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">followerId</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//持續直到取得需要的資源....
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>這樣的方法使得撰寫程式可以更直觀，並且可以直接套用try&hellip;catch() 來做例外處理。</p>
@@ -565,7 +592,7 @@
 
 
         <span>
-            最後更新 Dec 18, 2022 00:00 UTC
+            最後更新 2022/12/18
         </span>
     </section></footer>
 
@@ -734,7 +761,7 @@
         
             2022 - 
         
-        2023 趙冠霖|ZHAO,GUAN-LIN
+        2023 Victor&#39;s Blog
     </section>
     
     <section class="powerby">

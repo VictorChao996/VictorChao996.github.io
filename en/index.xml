@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Victor Chao</title>
+        <title>Victor&#39;s Blog</title>
         <link>https://victorchao996.github.io/en/</link>
-        <description>Recent content on Victor Chao</description>
+        <description>Recent content on Victor&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Sun, 03 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://victorchao996.github.io/en/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>About</title>
-        <link>https://victorchao996.github.io/en/about/</link>
+        <title>About Author</title>
+        <link>https://victorchao996.github.io/en/about-author/</link>
         <pubDate>Sun, 03 Jul 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://victorchao996.github.io/en/about/</guid>
-        <description></description>
+        <guid>https://victorchao996.github.io/en/about-author/</guid>
+        <description>&lt;h2 id=&#34;hello&#34;&gt;Hello!&lt;/h2&gt;
+&lt;p&gt;Hello! Welcome to my blog.&lt;br&gt;
+My name is Victor, and my Chinese name is &lt;em&gt;趙冠霖(ZHAO,GUAN-LIN)&lt;/em&gt;.&lt;br&gt;
+I&amp;rsquo;m a junior student majoring in &lt;strong&gt;CSIE(Computer Science and Information Technology).&lt;/strong&gt;&lt;br&gt;
+I take notes to improve my learning ability, and I usually write in Chinese.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;⚠️You can press the language button on the left to change the language to Mandarin(Traditional Chinese).&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
         </item>
         <item>
         <title>Archives</title>

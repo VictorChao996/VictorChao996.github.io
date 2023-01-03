@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Pages on 趙冠霖|ZHAO,GUAN-LIN</title>
+        <title>Pages on Victor&#39;s Blog</title>
         <link>https://victorchao996.github.io/page/</link>
-        <description>Recent content in Pages on 趙冠霖|ZHAO,GUAN-LIN</description>
+        <description>Recent content in Pages on Victor&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Sun, 03 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://victorchao996.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>關於</title>
-        <link>https://victorchao996.github.io/%E9%97%9C%E6%96%BC/</link>
+        <title>關於作者</title>
+        <link>https://victorchao996.github.io/%E9%97%9C%E6%96%BC%E4%BD%9C%E8%80%85/</link>
         <pubDate>Sun, 03 Jul 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://victorchao996.github.io/%E9%97%9C%E6%96%BC/</guid>
-        <description>&lt;h3 id=&#34;hello&#34;&gt;Hello!&lt;/h3&gt;
-&lt;p&gt;你好，我是Victor，一個資工系大四的學生，我在這邊寫文章。&lt;/p&gt;
+        <guid>https://victorchao996.github.io/%E9%97%9C%E6%96%BC%E4%BD%9C%E8%80%85/</guid>
+        <description>&lt;h2 id=&#34;hello&#34;&gt;Hello!&lt;/h2&gt;
+&lt;p&gt;你好，我的名字是 趙冠霖(ZHAO,GUAN-LIN)，你也可以叫我Victor。&lt;br&gt;
+目前是資工系大四的學生，歡迎參觀我的個人部落格。&lt;/p&gt;
 &lt;p&gt;目前主要會寫的文章: &lt;strong&gt;回顧文、課堂筆記整理、技術筆記、讀書心得&lt;/strong&gt;。&lt;/p&gt;
 </description>
         </item>

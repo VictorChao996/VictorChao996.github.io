@@ -8,13 +8,26 @@
 <link rel="stylesheet" href="/scss/style.min.a8dd000923453ffdc61da1b65e44a788a4389358ffc866b1520ea43f79a4e354.css"><meta property='og:title' content='第三周-初探Vue框架'>
 <meta property='og:description' content='前端之路挑戰第三周_前端框架比較&amp; Vue介紹'>
 <meta property='og:url' content='https://victorchao996.github.io/p/frontend_learning-third-week/'>
-<meta property='og:site_name' content='趙冠霖|ZHAO,GUAN-LIN'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Challenge' /><meta property='article:tag' content='JavaScript' /><meta property='article:tag' content='Vue' /><meta property='article:published_time' content='2022-12-25T18:00:00&#43;08:00'/><meta property='article:modified_time' content='2022-12-25T00:00:00&#43;00:00'/><meta property='og:image' content='https://victorchao996.github.io/p/frontend_learning-third-week/JavaScript.jpg' />
+<meta property='og:site_name' content='Victor&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Challenge' /><meta property='article:tag' content='JavaScript' /><meta property='article:tag' content='Vue' /><meta property='article:published_time' content='2022-12-25T18:00:00&#43;08:00'/><meta property='article:modified_time' content='2022-01-31T00:00:00&#43;00:00'/><meta property='og:image' content='https://victorchao996.github.io/p/frontend_learning-third-week/JavaScript.jpg' />
 <meta name="twitter:title" content="第三周-初探Vue框架">
 <meta name="twitter:description" content="前端之路挑戰第三周_前端框架比較&amp; Vue介紹"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://victorchao996.github.io/p/frontend_learning-third-week/JavaScript.jpg' />
-    <link rel="shortcut icon" href="img/favicon_io/favicon.ico" />
+<link rel="shortcut icon" href="img/favicon_io/favicon.ico" />
 
+
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CX6E9WC1NJ"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-CX6E9WC1NJ', { 'anonymize_ip': false });
+}
+</script>
+</head>
     </head>
     <body class="
     article-page
@@ -58,8 +71,8 @@
                     
                     
                         
-                        <img src="/img/avatar_victor_hu2cfdec7d2b90eca01e74865b3bb7baa8_122120_300x0_resize_q75_box.jpg" width="300"
-                            height="298" class="site-logo" loading="lazy" alt="Avatar">
+                        <img src="/img/avatar_victor4_huba6912e9e3d574393228032081d562fd_497795_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
                 </a>
@@ -69,7 +82,7 @@
         
         
         <div class="site-meta">
-            <h1 class="site-name"><a href="/">趙冠霖|ZHAO,GUAN-LIN</a></h1>
+            <h1 class="site-name"><a href="/">Victor&#39;s Blog</a></h1>
             <h2 class="site-description">嗨你好，我是Victor，目前是資訊工程學系大四的學生。</h2>
         </div>
     </header><ol class="social-menu">
@@ -133,7 +146,7 @@
         
 
         <li >
-            <a href='/%E9%97%9C%E6%96%BC/' >
+            <a href='/%E9%97%9C%E6%96%BC%E4%BD%9C%E8%80%85/' >
                 
                 
                 
@@ -146,7 +159,7 @@
 
 
                 
-                <span>關於</span>
+                <span>關於作者</span>
             </a>
         </li>
         
@@ -316,6 +329,20 @@
         
 
         
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    閱讀時間: 4 分鐘
+                </time>
+            </div>
+        
     </footer>
     
 
@@ -327,7 +354,7 @@
     
     
     <h2 id="前言">前言</h2>
-<p>第二周的主要的學習內容是JavaScript的基礎&amp;進階概念，而本周主要的學習內容是Vue.js 框架。</p>
+<p>第二周紀錄的主要學習內容是JavaScript的基礎&amp;進階概念，而本周主要的學習內容是認識框架(Vue.js)。</p>
 <p>在前端框架三支柱中(Angular、React、Vue)為什麼會選擇Vue來做學習呢? 其實是看中Vue框架主打的<strong>輕便性</strong>，另外也聽說官方文件易於閱讀學習，於是就果斷選擇Vue來入門。</p>
 <h3 id="三大框架簡單比較">三大框架簡單比較</h3>
 <ul>
@@ -375,44 +402,44 @@
 <ul>
 <li>Counter範例</li>
 </ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
 </span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">createApp</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;vue&#39;</span> 
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">createApp</span><span class="p">({</span> 
-</span></span><span class="line"><span class="cl">	<span class="nx">data</span><span class="p">()</span> <span class="p">{</span> 
-</span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="p">{</span> 
-</span></span><span class="line"><span class="cl">			<span class="nx">count</span><span class="o">:</span> <span class="mi">0</span> 
-</span></span><span class="line"><span class="cl">		<span class="p">}</span> 
-</span></span><span class="line"><span class="cl">	<span class="p">}</span> 
-</span></span><span class="line"><span class="cl"><span class="p">}).</span><span class="nx">mount</span><span class="p">(</span><span class="s1">&#39;#app&#39;</span><span class="p">)</span>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">createApp</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;vue&#39;</span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">createApp</span>({ 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">data</span>() { 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> { 
+</span></span><span style="display:flex;"><span>	  <span style="color:#a6e22e">count</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span> 
+</span></span><span style="display:flex;"><span>    } 
+</span></span><span style="display:flex;"><span>  } 
+</span></span><span style="display:flex;"><span>}).<span style="color:#a6e22e">mount</span>(<span style="color:#e6db74">&#39;#app&#39;</span>)
 </span></span></code></pre></td></tr></table>
 </div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
+</div><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
 </span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-HTML" data-lang="HTML"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p">&gt;</span> 
-</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">button</span> <span class="err">@</span><span class="na">click</span><span class="o">=</span><span class="s">&#34;count++&#34;</span><span class="p">&gt;</span> 
-</span></span><span class="line"><span class="cl">		Count is: {{ count }} 
-</span></span><span class="line"><span class="cl">	<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-HTML" data-lang="HTML"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;app&#34;</span>&gt; 
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">button</span> <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">click</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;count++&#34;</span>&gt; 
+</span></span><span style="display:flex;"><span>    Count is: {{ count }} 
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">button</span>&gt; 
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="響應式ui">⭐響應式UI</h4>
@@ -462,7 +489,7 @@
 
 
         <span>
-            最後更新 Dec 25, 2022 00:00 UTC
+            最後更新 2022/01/31
         </span>
     </section></footer>
 
@@ -631,7 +658,7 @@
         
             2022 - 
         
-        2023 趙冠霖|ZHAO,GUAN-LIN
+        2023 Victor&#39;s Blog
     </section>
     
     <section class="powerby">
