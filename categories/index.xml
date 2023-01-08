@@ -6,21 +6,21 @@
         <description>Recent content in Categories on Victor&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 31 Dec 2022 16:17:03 +0800</lastBuildDate><atom:link href="https://victorchao996.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 08 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://victorchao996.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>前端學習之路</title>
+        <link>https://victorchao996.github.io/categories/frontend_journey/</link>
+        <pubDate>Sun, 08 Jan 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://victorchao996.github.io/categories/frontend_journey/</guid>
+        <description>&lt;img src="https://victorchao996.github.io/categories/frontend_journey/css.jpg" alt="Featured image of post 前端學習之路" /&gt;</description>
+        </item>
+        <item>
         <title>Review 回顧</title>
         <link>https://victorchao996.github.io/categories/review/</link>
         <pubDate>Sat, 31 Dec 2022 16:17:03 +0800</pubDate>
         
         <guid>https://victorchao996.github.io/categories/review/</guid>
         <description>&lt;img src="https://victorchao996.github.io/categories/review/review.jpg" alt="Featured image of post Review 回顧" /&gt;</description>
-        </item>
-        <item>
-        <title>前端學習之路</title>
-        <link>https://victorchao996.github.io/categories/frontend_journey/</link>
-        <pubDate>Sun, 25 Dec 2022 18:00:00 +0800</pubDate>
-        
-        <guid>https://victorchao996.github.io/categories/frontend_journey/</guid>
-        <description>&lt;img src="https://victorchao996.github.io/categories/frontend_journey/css.jpg" alt="Featured image of post 前端學習之路" /&gt;</description>
         </item>
         <item>
         <title>書本閱讀系列</title>
