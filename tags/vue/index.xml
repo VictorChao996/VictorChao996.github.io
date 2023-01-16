@@ -319,6 +319,8 @@
 &lt;h2 id=&#34;結語&#34;&gt;結語&lt;/h2&gt;
 &lt;p&gt;以上就是一些簡單的關於vue基礎知識的總結。在學習的過程中發現自己對原生 JS 不是說到非常熟悉，以至於在學習有關event的內容是會卡住。也因為還不熟悉JS 事件&amp;amp;事件處理的精隨，以至於無法深刻體會Vue 中 v-指令帶來的好處。&lt;/p&gt;
 &lt;p&gt;現在清楚明白自己JS的基礎知識還讀的不夠深入，我認為目前不太適合繼續學習Vue相關的知識。所以下面幾周的學習內容應該會著重在&lt;strong&gt;JS 進階 &amp;amp; Web API 相關的知識&lt;/strong&gt;去做學習。&lt;/p&gt;
+&lt;p&gt;圖片來源: [MVVM] &lt;a class=&#34;link&#34; href=&#34;https://v1-cn.vuejs.org/guide/overview.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://v1-cn.vuejs.org/guide/overview.html&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>

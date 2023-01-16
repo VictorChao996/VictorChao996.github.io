@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://victorchao996.github.io/</loc>
-    <lastmod>2023-01-08T00:00:00+00:00</lastmod>
+    <lastmod>2023-01-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://victorchao996.github.io/categories/</loc>
-    <lastmod>2023-01-08T00:00:00+00:00</lastmod>
+    <lastmod>2023-01-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -29,13 +29,22 @@
                 />
   </url><url>
     <loc>https://victorchao996.github.io/tags/challenge/</loc>
-    <lastmod>2023-01-08T00:00:00+00:00</lastmod>
+    <lastmod>2023-01-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://victorchao996.github.io/tags/google-analytics/</loc>
+    <lastmod>2023-01-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://victorchao996.github.io/tags/google-search-console/</loc>
+    <lastmod>2023-01-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://victorchao996.github.io/post/</loc>
-    <lastmod>2023-01-08T00:00:00+00:00</lastmod>
+    <lastmod>2023-01-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://victorchao996.github.io/tags/pull-request/</loc>
+    <lastmod>2023-01-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://victorchao996.github.io/tags/</loc>
-    <lastmod>2023-01-08T00:00:00+00:00</lastmod>
+    <lastmod>2023-01-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -47,10 +56,13 @@
                 href="https://victorchao996.github.io/tags/"
                 />
   </url><url>
-    <loc>https://victorchao996.github.io/tags/vue/</loc>
-    <lastmod>2023-01-08T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://victorchao996.github.io/categories/frontend_journey/</loc>
+    <lastmod>2023-01-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://victorchao996.github.io/p/frontend_learning-fifth-week/</loc>
+    <lastmod>2023-01-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://victorchao996.github.io/tags/vue/</loc>
     <lastmod>2023-01-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://victorchao996.github.io/p/frontend_learning-fourth-week/</loc>

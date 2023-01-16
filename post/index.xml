@@ -6,7 +6,212 @@
         <description>Recent content in Posts on Victor&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 08 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://victorchao996.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 15 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://victorchao996.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>第五周-JS DOM、PR、GSC</title>
+        <link>https://victorchao996.github.io/p/frontend_learning-fifth-week/</link>
+        <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://victorchao996.github.io/p/frontend_learning-fifth-week/</guid>
+        <description>&lt;img src="https://victorchao996.github.io/p/frontend_learning-fifth-week/JavaScript.jpg" alt="Featured image of post 第五周-JS DOM、PR、GSC" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;大四上學期的最後一周，雖說部分科目在上星期陸續就考完結束了，但這周仍有考試&amp;amp;部分課堂活動。於是我就趁著空閒的時間去玩一點不一樣的項目。&lt;/p&gt;
+&lt;h2 id=&#34;主要學習內容&#34;&gt;主要學習內容&lt;/h2&gt;
+&lt;h3 id=&#34;1-js-html-dom&#34;&gt;1. JS HTML DOM&lt;/h3&gt;
+&lt;p&gt;在學習框架的過程中才發現自己對於DOM 的原理與操作不是很熟悉，於是就找了一些教材&amp;amp;影片打算將此遺漏的知識點給補齊。&lt;/p&gt;
+&lt;h4 id=&#34;介紹&#34;&gt;介紹&lt;/h4&gt;
+&lt;p&gt;根據MDN web docs上對於DOM的解釋:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The &lt;strong&gt;Document Object Model&lt;/strong&gt; (&lt;em&gt;DOM&lt;/em&gt;) is the data representation of the objects that comprise the structure and content of a document on the web.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;簡單來說DOM就是將HTML文件內的各個element都定義成物件，而這些物件會形成的一個具有階層關係的&lt;strong&gt;樹狀結構&lt;/strong&gt;。而JS可以透過DOM來改變HTML文件的內容。&lt;/p&gt;
+&lt;h4 id=&#34;常見dom操作&#34;&gt;常見DOM操作&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;新增/刪除 element&lt;/li&gt;
+&lt;li&gt;更改element 的內容(text、HTML)&lt;/li&gt;
+&lt;li&gt;更改element的屬性(Attribute、Classes、CSS styles等)&lt;/li&gt;
+&lt;li&gt;對於HTML events做出反應&lt;/li&gt;
+&lt;li&gt;新增HTML events&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;常見-methods--property&#34;&gt;常見 Methods &amp;amp; Property&lt;/h4&gt;
+&lt;h5 id=&#34;addingdeleting&#34;&gt;Adding/Deleting&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;document.createElement(element)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;document.removeChild(element)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;document.appendChild(element)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;document.appendChild(element)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;document.replaceChild(new, old)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;document.write(text)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;finding&#34;&gt;Finding&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;document.getElementById()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;document.getElementByClassName()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;document.getElementByTagName()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;document.querySelector()&lt;/code&gt;&lt;/strong&gt; : 選擇第一個符合的Element&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;document.querySelectorAll()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;changing&#34;&gt;Changing&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;element.innerHTML&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;element.attribute&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;element.style.property&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;element.setAttribute()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;dom-traversal-selecting&#34;&gt;DOM Traversal (selecting)&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Children (下一代): `children()&lt;/li&gt;
+&lt;li&gt;Descendants(孫子後)&lt;/li&gt;
+&lt;li&gt;parents (上一代): &lt;code&gt;parentElement()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Ancestors(祖先): &lt;code&gt;closest()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Sibling(同輩): &lt;code&gt;nextElementSiblings()&lt;/code&gt;、&lt;code&gt;previousElementSiblings&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;有了以上不同的method就可以在JS中對HTML文件進行修改，以下為歸納出的步驟:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;尋找(Finding/DOM traversal)-&amp;gt;更換內容(Changing)&lt;/li&gt;
+&lt;li&gt;尋找-&amp;gt;建立(Adding)&lt;/li&gt;
+&lt;li&gt;尋找-&amp;gt;建立Event Listener&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;範例&#34;&gt;範例:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;15
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;16
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;17
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;18
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-HTML&#34; data-lang=&#34;HTML&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;container&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;textarea&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;story&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;textarea&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;button&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;set-text&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;button&amp;#34;&lt;/span&gt;&amp;gt;Set text content&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;button&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;button&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;clear-text&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;button&amp;#34;&lt;/span&gt;&amp;gt;Clear text content&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;button&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;story&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;body&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.story&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;setText&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;body&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#set-text&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;setText&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addEventListener&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;click&amp;#34;&lt;/span&gt;, ()=&amp;gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;story&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;textContent&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;It was a dark and stormy night...&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;})
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;clearText&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;body&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#clear-text&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;clearText&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addEventListener&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;click&amp;#34;&lt;/span&gt;, () =&amp;gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;story&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;textContent&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;});
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;因為DOM操作涉及到 JavaScript events相關的內容，此時我才發現自己對於event的學習還不夠深入。目前僅知道click, mouse, keyboard等事件類別，對於events進階的觀念 等還不夠熟悉，這之後的坑要等到下星期再補齊了。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2-github-pr&#34;&gt;2. GitHub PR&lt;/h3&gt;
+&lt;p&gt;本周學習的第二重點項目，gitHub 的 pull request。先前對gitHub的使用都只把它當作個人的程式碼備份平台，上傳練習時的程式碼。然而gitHub真正出名的地方在於可以&lt;strong&gt;與其他人協作專案，結合git 版控實現真正的多人協作&lt;/strong&gt;。&lt;/p&gt;
+&lt;h4 id=&#34;協作經驗&#34;&gt;協作經驗&lt;/h4&gt;
+&lt;p&gt;先前與他人協作開發的經驗包括使用Unity Collaborate、Gitea等，前者是Unity遊戲引擎編輯器的內建合作工具，後者則是基於git 版控工具的協作雲端平台(類似GitHub)。&lt;/p&gt;
+&lt;p&gt;前者因為專案主要的開發項目在我的本地端，所以沒有到太大的問題。而後者則是同一個專案中的不同部分由兩三個人去做開發(也就是沒有一端維護主要的程式碼)。&lt;/p&gt;
+&lt;h4 id=&#34;檔案覆蓋問題&#34;&gt;檔案覆蓋問題&lt;/h4&gt;
+&lt;p&gt;在開發的初期原先有規劃好說不去碰特定資料夾中的內容，避免merge時會有問題，然而意外卻還是不小心發生了。因為Unity專案中的資料與遊戲素材多又雜，導致我在清理檔案的時候不小心誤觸了開發資料夾以外的素材檔。當時的情況是&lt;strong&gt;我誤刪了資料夾以外的資源檔案(地形檔)&lt;/strong&gt;，再加上我不小心把雲端的資料給覆蓋過去(不清楚為何能Push上雲端，也許是用了force指令?)，&lt;strong&gt;導致另一人開發的關卡地形消失&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;鬧出了這麼大的鍋，好在最後經由Git將專案回朔到出事之前的版本才解決了版本不合的問題。在本周了解PR是怎麼一回事之後才發現，如果當初有學過這個操作，那是否就能避免檔案覆蓋的問題了呢?&lt;/p&gt;
+&lt;h4 id=&#34;pr的作用&#34;&gt;PR的作用&lt;/h4&gt;
+&lt;p&gt;當協作者想要將本地端的內容整合到雲端repo時，git push後會發送通知，&lt;strong&gt;請求(Request)該repo的原作做拉(pull)的動作&lt;/strong&gt;，所以叫做Pull Request。&lt;/p&gt;
+&lt;p&gt;這麼做的好處是可以&lt;strong&gt;避免其他協作者直接覆蓋檔案&lt;/strong&gt;，且原作在收到PR後可以&lt;strong&gt;比對程式碼並做審核的動作&lt;/strong&gt;，而每一次PR提交都會有紀錄可以做為追蹤。&lt;/p&gt;
+&lt;h4 id=&#34;第一次pr&#34;&gt;第一次PR&lt;/h4&gt;
+&lt;p&gt;為了做PR的練習，我找了gitHub上的一個名為[first-contributions](&lt;a class=&#34;link&#34; href=&#34;https://github.com/firstcontributions/first-contributions&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;firstcontributions/first-contributions: 🚀✨ Help beginners to contribute to open source projects (github.com)&lt;/a&gt;)的Public Repo，他的ReadMe.md文件上有詳細的PR教學，造著說明一步一步做即可。我將其歸納為以下幾步:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;fork 其他人的repo&lt;/li&gt;
+&lt;li&gt;clone repo到本地進行修改&lt;/li&gt;
+&lt;li&gt;本地修改(通常會另開branch)，並commit&lt;/li&gt;
+&lt;li&gt;push 到自己的gitHub repo上&lt;/li&gt;
+&lt;li&gt;提交PR&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;原作者同意PR(將你的branch整合到他repo的branch上)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;根據以上的步驟，我完成了第一次的PR，也成為了該repo的contributor !&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;3-google-analytics-與-google-search-console&#34;&gt;3. Google Analytics 與 Google Search Console&lt;/h3&gt;
+&lt;h4 id=&#34;搜尋&#34;&gt;搜尋???&lt;/h4&gt;
+&lt;p&gt;先前架設好這個Blog後我就一直在想，既然有辦法透過URL連結到此網站，那能不能被Google 搜尋到呢? 出於好奇搜索了一遍，無奈的是即使下了很精確的關鍵字仍然沒有顯示在搜尋結果中。&lt;/p&gt;
+&lt;p&gt;後來爬了一些網路文章後才得知網站要被google收錄需要一段時間，但等不及的我於是上網找了能盡快被收錄的方法，也就是&lt;strong&gt;主動向google登陸我的blog網站&lt;/strong&gt;。&lt;/p&gt;
+&lt;h4 id=&#34;gsc驗證&#34;&gt;GSC驗證&lt;/h4&gt;
+&lt;p&gt;登陸的方法就是在Google Search Console上&lt;strong&gt;驗證網站，並且提交sitemap.xml&lt;/strong&gt;，能讓網站早一點被收錄。google search console的驗證方法有很多種，而我很意外的選擇採用 &lt;strong&gt;Google Analytics驗證&lt;/strong&gt; 。&lt;/p&gt;
+&lt;p&gt;通過驗證的方法就是將GA提供的一段HTML標記給放到網站的&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;之間，這樣GA就能驗證網站是否有被登錄。再花了不少時間後才將HTML標記給放到靜態網站建置的網頁中，也順利地通過GA的驗證。&lt;/p&gt;
+&lt;p&gt;有了GA的驗證後，GSC的驗證也順利地通過，最後一步就是等待提交的sitemap被處理。當過程順利完成後，在google 搜尋引擎中輸入 &lt;strong&gt;site: 網址名&lt;/strong&gt; 即可在搜尋引擎中看到個人網站的連結。&lt;/p&gt;
+&lt;h4 id=&#34;結果&#34;&gt;結果&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://victorchao996.github.io/p/frontend_learning-fifth-week/googleSearch1.png&#34;
+	width=&#34;1272&#34;
+	height=&#34;697&#34;
+	srcset=&#34;https://victorchao996.github.io/p/frontend_learning-fifth-week/googleSearch1_huac020af9265fd3b37ceba596bb5b1f34_105565_480x0_resize_box_3.png 480w, https://victorchao996.github.io/p/frontend_learning-fifth-week/googleSearch1_huac020af9265fd3b37ceba596bb5b1f34_105565_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;成功在google search engine中搜尋到網站&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;182&#34;
+		data-flex-basis=&#34;437px&#34;
+	
+&gt;
+&lt;img src=&#34;https://victorchao996.github.io/p/frontend_learning-fifth-week/googleSearch2.png&#34;
+	width=&#34;1213&#34;
+	height=&#34;727&#34;
+	srcset=&#34;https://victorchao996.github.io/p/frontend_learning-fifth-week/googleSearch2_hu0aee665aa9f59d0f27a91d58cfd67768_98419_480x0_resize_box_3.png 480w, https://victorchao996.github.io/p/frontend_learning-fifth-week/googleSearch2_hu0aee665aa9f59d0f27a91d58cfd67768_98419_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;直接搜尋網站的title，綜合排名在第二名的位置😮。&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;166&#34;
+		data-flex-basis=&#34;400px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;我後來才發現GSC提供的驗證方法之一就包含在網站&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;中嵌入HTML標記的方式，只不過我意外地透過GA去驗證了GSC。結果就是我不僅完成了&lt;strong&gt;網站的被搜尋功能，也順道完成了網站串聯GA分析&lt;/strong&gt;😂。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://victorchao996.github.io/p/frontend_learning-fifth-week/googleAnalytics.png&#34;
+	width=&#34;1092&#34;
+	height=&#34;813&#34;
+	srcset=&#34;https://victorchao996.github.io/p/frontend_learning-fifth-week/googleAnalytics_hubdfea1cbeb05fa4aa977af2c6a5bcae9_61691_480x0_resize_box_3.png 480w, https://victorchao996.github.io/p/frontend_learning-fifth-week/googleAnalytics_hubdfea1cbeb05fa4aa977af2c6a5bcae9_61691_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Google Analytics網站數據分析截圖&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;134&#34;
+		data-flex-basis=&#34;322px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;結語&#34;&gt;結語&lt;/h2&gt;
+&lt;p&gt;這一周的學習內容並沒有著重在特定的主題，完全是興趣使然的結果，而我也在找尋資料並實作的過程中能慢慢地體會到&lt;strong&gt;做中學的快樂&lt;/strong&gt; 。若是未來的學習過程都能如此有趣的話，那每天額外花個3小時專研技術根本就不是問題，畢竟是有趣的對吧?&lt;/p&gt;
+&lt;p&gt;以上就是前端學習第五周的內容，下周開始是寒假的第一周，時間會充裕許多，我也能有更多的時間可以做學習，好好的充實自己。&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;參考資料:
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gideonwolfe.com/posts/sysadmin/hugo/hugogoogleanalytics/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Adding Google Analytics to your Hugo Site :: Gideon Wolfe&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://digitaldrummerj.me/hugo-google-analytics/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo - Add Google Analytics | Justin James (digitaldrummerj.me)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.shopjkl.com/pages/ga&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;2021經典版Google Analytics教學 教你看懂GA＆活用GA (shopjkl.com)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.seo-tea.com/google-search-console-tutorial/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;【完整指南】2022 Google Search Console教學(附索引問題處理) - SEO分解茶 (seo-tea.com)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>第四周-vue基礎</title>
         <link>https://victorchao996.github.io/p/frontend_learning-fourth-week/</link>
         <pubDate>Sun, 08 Jan 2023 00:00:00 +0000</pubDate>
@@ -319,6 +524,8 @@
 &lt;h2 id=&#34;結語&#34;&gt;結語&lt;/h2&gt;
 &lt;p&gt;以上就是一些簡單的關於vue基礎知識的總結。在學習的過程中發現自己對原生 JS 不是說到非常熟悉，以至於在學習有關event的內容是會卡住。也因為還不熟悉JS 事件&amp;amp;事件處理的精隨，以至於無法深刻體會Vue 中 v-指令帶來的好處。&lt;/p&gt;
 &lt;p&gt;現在清楚明白自己JS的基礎知識還讀的不夠深入，我認為目前不太適合繼續學習Vue相關的知識。所以下面幾周的學習內容應該會著重在&lt;strong&gt;JS 進階 &amp;amp; Web API 相關的知識&lt;/strong&gt;去做學習。&lt;/p&gt;
+&lt;p&gt;圖片來源: [MVVM] &lt;a class=&#34;link&#34; href=&#34;https://v1-cn.vuejs.org/guide/overview.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://v1-cn.vuejs.org/guide/overview.html&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -889,6 +1096,8 @@
 &lt;p&gt;面完的當下就很想要重來一次，不過時間無法倒流，期許自己好好把握每一次學習的機會。做為人生第一次正式的面試，雖然過程只有短短半小時，而且也不是工作相關的，不過我認為這是非常難得的學習機會，我也很慶幸自己踏出這一步。&lt;/p&gt;
 &lt;p&gt;非常感謝Appsowrk School給我這面談的機會，在準備面談的過程中我明確了解自己有非常多的不足，值得我投入時間去改善學習。另外在這兩三周忙碌的準備中也將我從低潮中抽離出來，使我能不再把注意力放在那些會讓我焦慮的想法上。&lt;/p&gt;
 &lt;p&gt;第一次的面試心得就分享到這，下一站會去哪呢? 面試趣，我們下一篇再見。&lt;/p&gt;
+&lt;h2 id=&#34;後記&#34;&gt;後記&lt;/h2&gt;
+&lt;p&gt;我在2023/1/3收到錄取通知啦!!! 感謝當初有付出行動的我，希望加入program之後依切順利。&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -1067,14 +1276,14 @@
 &lt;p&gt;至於整個專題使用到的技術以及遇到的困難，我會另外寫在其他篇文章上。&lt;/p&gt;
 &lt;h2 id=&#34;學到的寶貴經驗&#34;&gt;學到的寶貴經驗&lt;/h2&gt;
 &lt;p&gt;下面就列舉&lt;strong&gt;十個&lt;/strong&gt;我學習到的寶貴經驗，雖然我自認為混了兩個學期，不過仔細回想還是有學到不少內容。我打算把它寫下來，好說服自己多少還是有學到點東西。&lt;/p&gt;
-&lt;h3 id=&#34;做好充足的準備再下決定&#34;&gt;🪄做好充足的準備再下決定&lt;/h3&gt;
+&lt;h3 id=&#34;1做好充足的準備再下決定&#34;&gt;1.做好充足的準備再下決定&lt;/h3&gt;
 &lt;p&gt;當初大二下在找專題指導教授的時候沒有好好的評估與思考就直接決定要加入現在的實驗室，現在往回看總覺得沒有好好地評估過在下決定有點可惜。當時沒有認真思考實驗室方向與未來生涯的發展性，如果我可以回到過去，我一定會仔細的評估以下三點: &lt;strong&gt;教授的專長&amp;amp;實驗室的技術方向、教授的指導態度、專題生的參與度&lt;/strong&gt;，而興趣應該要放在這三點之後。&lt;/p&gt;
 &lt;p&gt;以當時的眼界與知識廣度絕對無法讓我決定出當前最好的選擇，不過就我所知有參加專題說明會的教授中，這個教授以及他的實驗室所做的方向最接近我有興趣的開發，也就是&lt;strong&gt;遊戲開發&lt;/strong&gt;。於是我就選擇加入了。&lt;/p&gt;
 &lt;p&gt;至於實驗室實際情況如何(笑)，我會另開一篇文章來寫，能談的東西實在太多了。&lt;/p&gt;
-&lt;h3 id=&#34;好的溝通幫你省時間&#34;&gt;🪄好的溝通幫你省時間&lt;/h3&gt;
+&lt;h3 id=&#34;2好的溝通幫你省時間&#34;&gt;2.好的溝通幫你省時間&lt;/h3&gt;
 &lt;p&gt;好的溝通真的很重要!這個觀念是我上半學期最大的感想。當初參與計畫端的會議時有一起討論，不過計畫端的要求一直不是很明確，有新增修改。除此之外，也許是計畫端那邊的教授很忙同時有很多個案子在跑，所以比較沒有特別關注我這邊開發的東西。最後的結果就是，跟計畫端那邊demo好幾周之後才發現&lt;strong&gt;方向根本做錯&lt;/strong&gt;，浪費了好幾周。&lt;/p&gt;
 &lt;p&gt;其實上述問題的發生與計畫端也有一點關係，不過後來仔細想想如果自己夠積極主動是可以避免的，只能說自己還有很大的改進空間。詳細發生的問題會寫在另外一篇上。&lt;/p&gt;
-&lt;h3 id=&#34;提前計畫不會吃虧&#34;&gt;🪄提前計畫不會吃虧&lt;/h3&gt;
+&lt;h3 id=&#34;3提前計畫不會吃虧&#34;&gt;3.提前計畫不會吃虧&lt;/h3&gt;
 &lt;p&gt;大三上與大三下的所修的課程偏多，兩學期的課程都有到&lt;strong&gt;21學分(含專題)&lt;/strong&gt;，相較於每學期的最低標準16學分來說應該算滿多的。剛開學的時候還算輕鬆，當期中考周或是期末考周來臨的時候，就會感到時間嚴重不夠用，各種報告&amp;amp;考試都集中在這一兩周內，壓力有夠大。&lt;/p&gt;
 &lt;p&gt;所以提前規劃好各種事情比較不會手忙腳亂。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://victorchao996.github.io/p/independent-study-project-10things/Test_and_Homework.jpg&#34;
@@ -1091,30 +1300,30 @@
 		data-flex-basis=&#34;1041px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h3 id=&#34;有些事情不是你的錯但卻是你的責任&#34;&gt;🪄有些事情不是你的錯，但卻是你的責任&lt;/h3&gt;
+&lt;h3 id=&#34;4有些事情不是你的錯但卻是你的責任&#34;&gt;4.有些事情不是你的錯，但卻是你的責任&lt;/h3&gt;
 &lt;p&gt;剛加入實驗室的時候，原本要做的項目有學長的專案可以參考，但後來發現學長開發的專案所使用的&lt;strong&gt;設備已經停產&lt;/strong&gt;了。而且更慘的是，深入研究學長的專題後發現，專案中的程式碼是來自設備商發佈在平台上的開發套件(姑且稱他為prefab吧)，總而言之就是一個可以直接拿來用的套件，前提是要使用他們家的產品。&lt;/p&gt;
 &lt;p&gt;當時我遇到的第一個大問題就是，我要拿著&lt;strong&gt;新的設備來達到相近的功能，但我沒有可以參考的script&lt;/strong&gt;。而我遇到的第二個問題是，&lt;strong&gt;實驗室沒有人做過類似的，連碩班學長都沒有&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;有一段時間真的有點崩潰，我想要達到的功能網路上相關的資料很少，應該說幾乎沒有。為什麼相關資料很少呢? 這就跟我想要達到的功能有關了。老師的要求是希望能用設備來控制遊玩，就像是學長專題做的東西。然而，實驗室所購買的這個設備是一個&lt;strong&gt;完整的產品&lt;/strong&gt;，開發商販賣這個設備的目的是希望買家可以購買他們製作的遊戲，換句話說，是為了讓玩家體驗這款遊戲而販賣這個設備。&lt;strong&gt;這個設備被販賣目的從一開始就不是為了開發&lt;/strong&gt;，自然而然在官網上就不會出現針對這個設備的開發文件、開發套件、或API可以讓我來研究使用。&lt;/p&gt;
 &lt;p&gt;這也間接導致我大三上學期整個進度大當機，只能先去做比較次要的開發，好讓每周的meeting內容看起來不會這麼水。不過最後還是躲不掉老師的提問，有好幾周都只能尷尬的回說，「這部分我還在努力研究中&amp;hellip;」。&lt;/p&gt;
 &lt;p&gt;抱怨歸抱怨，不過這也是當時我自己需要克服的問題；我想說的是，&lt;strong&gt;有些事情不是你的錯，但卻是你的責任。&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&#34;別跟自己過不去&#34;&gt;🪄別跟自己過不去&lt;/h3&gt;
+&lt;h3 id=&#34;5別跟自己過不去&#34;&gt;5.別跟自己過不去&lt;/h3&gt;
 &lt;p&gt;除了上面提到問題，還有不少讓我灰心的各種事情，包括開發的項目與我當初加入實驗室前的期望不同、製作的遊戲很無聊、教授的態度等等。&lt;/p&gt;
 &lt;p&gt;導致我大三上有好一段時間心情很沮喪(尤其是期中周前後&amp;amp;期末事情一多的時候)，算是進入一個&lt;strong&gt;低潮期&lt;/strong&gt;吧。那段時間常常出現自我懷疑，尤其在與同學聊天的過程中了解到同學們在專題上的所學與進度之後，我就會問自己:「你現在在幹嘛? 這真的是你希望的嗎? 你對現在的生活滿意嗎?」，而答案顯而易見: &lt;strong&gt;我很不滿意&lt;/strong&gt; 。&lt;/p&gt;
 &lt;p&gt;後來我心念一轉，&lt;strong&gt;很多事情不是我能控制的&lt;/strong&gt;，因此&lt;strong&gt;只需要專注在我能努力的事情&lt;/strong&gt;就好，至於我無法改變的事情就隨他去吧。除此之外，在寒假休息期間我也鼓勵自己下個學期無論如何都要努力把這個這個功能給做出來，不然以後的我肯定會很後悔。&lt;/p&gt;
 &lt;p&gt;我必須說，壓力大的時候做點可以舒緩壓力的事情真的很重要! 無論是打球運動、看影片玩遊戲、聽音樂娛樂，或甚至找朋友聊聊都很有幫助。特別感謝與我同一個實驗室的專題生&lt;strong&gt;小崴&lt;/strong&gt;時常在meeting完之後陪我吃飯聊天，雖然我們加入的計畫不同，但都有遇到各種鳥事XD，互相吐苦水大大的幫助我紓解壓力。所以壓力大的時候別跟自己過不去，撐到最後才是真的!&lt;/p&gt;
-&lt;h3 id=&#34;不要指望別人會對你有幫助&#34;&gt;🪄不要指望別人會對你有幫助&lt;/h3&gt;
+&lt;h3 id=&#34;6不要指望別人會對你有幫助&#34;&gt;6.不要指望別人會對你有幫助&lt;/h3&gt;
 &lt;p&gt;在前面提到的低潮期中，我甚至還一度萌生出擺爛的想法，總想著如果讓老師調人來支援我，或乾脆老師把我換到別的計畫底下去做那該有多好。但那也只是我在壓力大的時候所產生的想法罷了，最後也沒有如願發生。&lt;/p&gt;
 &lt;p&gt;後來我想通了一件事那就是，&lt;strong&gt;「不要期待別人總會對你有幫助」&lt;/strong&gt;。每個人都有自己的事情要忙，而且實際上他們也沒有義務要幫忙，所以很多事情還是要靠自己來，俗話說的好:&lt;strong&gt;「師父領進門，修行在個人。」&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&#34;真的不行的時候還是要尋求幫助&#34;&gt;🪄真的不行的時候還是要尋求幫助&lt;/h3&gt;
+&lt;h3 id=&#34;7真的不行的時候還是要尋求幫助&#34;&gt;7.真的不行的時候還是要尋求幫助&lt;/h3&gt;
 &lt;p&gt;雖然才說不要期待別人會對你有幫助，但這樣講並不代表你不能主動去尋求幫助。事實上，當一件事需要花費大量的時間跟力氣來做，卻仍然沒有什麼實質進展時，這時反而要&lt;strong&gt;檢討自己是不是方法不正確&lt;/strong&gt;。當遇到困難時，比起自己埋頭苦幹，尋求他人的意見或幫助才是正確的。&lt;/p&gt;
 &lt;p&gt;在這邊也要特別感謝Yo學長的幫助，在我遇到困難的時候有丟一些網路的資料，或是提供我一些想法，甚至提供我對這方面有經驗的開發者的微信帳號讓我可以向他請教問題(雖然最後還是沒有幫助就是了XD)。另外也要特別感謝Yang學長的幫助，在我開發上遇到困難時，幫助我分析問題可能的原因。沒有這兩人的幫助，我沒有辦法順利的完成這個專題成果。&lt;/p&gt;
-&lt;h3 id=&#34;你認為很基本的事情在其他人眼中可能看起來很難&#34;&gt;🪄你認為很基本的事情在其他人眼中可能看起來很難&lt;/h3&gt;
+&lt;h3 id=&#34;8你認為很基本的事情在其他人眼中可能看起來很難&#34;&gt;8.你認為很基本的事情在其他人眼中可能看起來很難&lt;/h3&gt;
 &lt;p&gt;在上面提到的問題終於解決的時候，還記得有不只一個研究生跟我說你這個真的厲害，直接硬幹寫出來。但如果將我達到最終結果的步驟一一拆解，其實也沒有用到多艱深的技術，在查找資料的過程中，我也很幸運的找到某位大大在GitHub上開源的API，使用這個API我就可以在使用的軟體中獲取到藍芽設備傳送過來的data。最後經過一番臨摹參考別人的scipt才得以客製化一個能在專案中使用的script，其中也包括&lt;strong&gt;轉換設備傳送來的原始數據&lt;/strong&gt;，這也是為什麼學長會覺得硬幹真的猛。但講真的，如果該設備一開始就有開發套件可以使用，那我也不需要為了這件事情焦頭爛額半個學期，我也可以花更多時間在改善其他部份上。&lt;/p&gt;
-&lt;h3 id=&#34;人都是自私的&#34;&gt;🪄人都是自私的&lt;/h3&gt;
+&lt;h3 id=&#34;9人都是自私的&#34;&gt;9.人都是自私的&lt;/h3&gt;
 &lt;p&gt;在遇到困難的那幾周meeting時，我在報告的簡報中都會放上遇到的困難，希望讓老師了解我無法解決。我也在幫自己找理由，試圖製造出&lt;strong&gt;我努力過了，但我就是無法&lt;/strong&gt;的假象，但當我後來發現老師根本不太在乎，也不想幫我的時候，我就改變主意了。&lt;/p&gt;
 &lt;p&gt;我不再提出我遇到的困難，變成單純的報告自己完成的進度。我甚至會在比較忙的時候把&lt;strong&gt;已經完成的進度&lt;/strong&gt;分成兩周來報告，剛加入實驗室的熱情早已燃燒殆盡，只剩交差了事。個人心境的變化可以談的比較多，而這跟我們實驗室的專題性質有很大的關係，之後會在另一篇文章中分享，總而言之就是我最後也&lt;strong&gt;逐漸走向偷懶的道路&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;人都是自私的&lt;/strong&gt;，教授也是、學長也是，我也是。&lt;/p&gt;
-&lt;h3 id=&#34;一切都是最好的安排&#34;&gt;🪄一切都是最好的安排&lt;/h3&gt;
+&lt;h3 id=&#34;10一切都是最好的安排&#34;&gt;10.一切都是最好的安排&lt;/h3&gt;
 &lt;p&gt;現在這個時間點往回看這兩個學期的日子，雖然有非常多的事情可以吐槽，但我也學到非常多事。我認為自己的&lt;strong&gt;軟實力&amp;amp;硬實力&lt;/strong&gt;都有所提升，提升的程度比起過去修過的任何一堂課程都來的有效果。這兩學期的經驗與過去的學習經驗不大相同，以往我都不太會認真思考並嘗試自己解決問題，遇到問題時通常都是先上網找解答，這個壞習慣也讓我嘗到苦頭。經過這兩學期，我深刻的瞭解到，自己應該要先專研過再去尋找答案，不然若網路上沒有直接的解決方法那豈不是就無解了嗎?&lt;/p&gt;
 &lt;p&gt;藉此機會我也了解到為什麼資工系的必修課程我都學不太好，這都是&lt;strong&gt;不求甚解&lt;/strong&gt;的後果，畢竟很多時候作業網路上都有解答對吧? 關於這個問題我之後也會寫一篇文章來分享。&lt;/p&gt;
 &lt;h2 id=&#34;總結&#34;&gt;總結&lt;/h2&gt;

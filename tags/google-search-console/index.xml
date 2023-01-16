@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Google Search Console on Victor&#39;s Blog</title>
+        <link>https://victorchao996.github.io/tags/google-search-console/</link>
+        <description>Recent content in Google Search Console on Victor&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 15 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://victorchao996.github.io/tags/google-search-console/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>第五周-JS DOM、PR、GSC</title>
+        <link>https://victorchao996.github.io/p/frontend_learning-fifth-week/</link>
+        <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://victorchao996.github.io/p/frontend_learning-fifth-week/</guid>
+        <description>&lt;img src="https://victorchao996.github.io/p/frontend_learning-fifth-week/JavaScript.jpg" alt="Featured image of post 第五周-JS DOM、PR、GSC" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;大四上學期的最後一周，雖說部分科目在上星期陸續就考完結束了，但這周仍有考試&amp;amp;部分課堂活動。於是我就趁著空閒的時間去玩一點不一樣的項目。&lt;/p&gt;
+&lt;h2 id=&#34;主要學習內容&#34;&gt;主要學習內容&lt;/h2&gt;
+&lt;h3 id=&#34;1-js-html-dom&#34;&gt;1. JS HTML DOM&lt;/h3&gt;
+&lt;p&gt;在學習框架的過程中才發現自己對於DOM 的原理與操作不是很熟悉，於是就找了一些教材&amp;amp;影片打算將此遺漏的知識點給補齊。&lt;/p&gt;
+&lt;h4 id=&#34;介紹&#34;&gt;介紹&lt;/h4&gt;
+&lt;p&gt;根據MDN web docs上對於DOM的解釋:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The &lt;strong&gt;Document Object Model&lt;/strong&gt; (&lt;em&gt;DOM&lt;/em&gt;) is the data representation of the objects that comprise the structure and content of a document on the web.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;簡單來說DOM就是將HTML文件內的各個element都定義成物件，而這些物件會形成的一個具有階層關係的&lt;strong&gt;樹狀結構&lt;/strong&gt;。而JS可以透過DOM來改變HTML文件的內容。&lt;/p&gt;
+&lt;h4 id=&#34;常見dom操作&#34;&gt;常見DOM操作&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;新增/刪除 element&lt;/li&gt;
+&lt;li&gt;更改element 的內容(text、HTML)&lt;/li&gt;
+&lt;li&gt;更改element的屬性(Attribute、Classes、CSS styles等)&lt;/li&gt;
+&lt;li&gt;對於HTML events做出反應&lt;/li&gt;
+&lt;li&gt;新增HTML events&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;常見-methods--property&#34;&gt;常見 Methods &amp;amp; Property&lt;/h4&gt;
+&lt;h5 id=&#34;addingdeleting&#34;&gt;Adding/Deleting&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;document.createElement(element)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;document.removeChild(element)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;document.appendChild(element)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;document.appendChild(element)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;document.replaceChild(new, old)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;document.write(text)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;finding&#34;&gt;Finding&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;document.getElementById()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;document.getElementByClassName()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;document.getElementByTagName()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;document.querySelector()&lt;/code&gt;&lt;/strong&gt; : 選擇第一個符合的Element&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;document.querySelectorAll()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;changing&#34;&gt;Changing&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;element.innerHTML&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;element.attribute&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;element.style.property&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;element.setAttribute()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;dom-traversal-selecting&#34;&gt;DOM Traversal (selecting)&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Children (下一代): `children()&lt;/li&gt;
+&lt;li&gt;Descendants(孫子後)&lt;/li&gt;
+&lt;li&gt;parents (上一代): &lt;code&gt;parentElement()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Ancestors(祖先): &lt;code&gt;closest()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Sibling(同輩): &lt;code&gt;nextElementSiblings()&lt;/code&gt;、&lt;code&gt;previousElementSiblings&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;有了以上不同的method就可以在JS中對HTML文件進行修改，以下為歸納出的步驟:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;尋找(Finding/DOM traversal)-&amp;gt;更換內容(Changing)&lt;/li&gt;
+&lt;li&gt;尋找-&amp;gt;建立(Adding)&lt;/li&gt;
+&lt;li&gt;尋找-&amp;gt;建立Event Listener&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;範例&#34;&gt;範例:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;15
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;16
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;17
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;18
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-HTML&#34; data-lang=&#34;HTML&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;container&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;textarea&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;story&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;textarea&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;button&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;set-text&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;button&amp;#34;&lt;/span&gt;&amp;gt;Set text content&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;button&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;button&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;clear-text&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;button&amp;#34;&lt;/span&gt;&amp;gt;Clear text content&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;button&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;story&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;body&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.story&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;setText&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;body&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#set-text&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;setText&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addEventListener&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;click&amp;#34;&lt;/span&gt;, ()=&amp;gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;story&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;textContent&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;It was a dark and stormy night...&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;})
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;clearText&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;body&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;querySelector&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#clear-text&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;clearText&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;addEventListener&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;click&amp;#34;&lt;/span&gt;, () =&amp;gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;story&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;textContent&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;});
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;因為DOM操作涉及到 JavaScript events相關的內容，此時我才發現自己對於event的學習還不夠深入。目前僅知道click, mouse, keyboard等事件類別，對於events進階的觀念 等還不夠熟悉，這之後的坑要等到下星期再補齊了。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2-github-pr&#34;&gt;2. GitHub PR&lt;/h3&gt;
+&lt;p&gt;本周學習的第二重點項目，gitHub 的 pull request。先前對gitHub的使用都只把它當作個人的程式碼備份平台，上傳練習時的程式碼。然而gitHub真正出名的地方在於可以&lt;strong&gt;與其他人協作專案，結合git 版控實現真正的多人協作&lt;/strong&gt;。&lt;/p&gt;
+&lt;h4 id=&#34;協作經驗&#34;&gt;協作經驗&lt;/h4&gt;
+&lt;p&gt;先前與他人協作開發的經驗包括使用Unity Collaborate、Gitea等，前者是Unity遊戲引擎編輯器的內建合作工具，後者則是基於git 版控工具的協作雲端平台(類似GitHub)。&lt;/p&gt;
+&lt;p&gt;前者因為專案主要的開發項目在我的本地端，所以沒有到太大的問題。而後者則是同一個專案中的不同部分由兩三個人去做開發(也就是沒有一端維護主要的程式碼)。&lt;/p&gt;
+&lt;h4 id=&#34;檔案覆蓋問題&#34;&gt;檔案覆蓋問題&lt;/h4&gt;
+&lt;p&gt;在開發的初期原先有規劃好說不去碰特定資料夾中的內容，避免merge時會有問題，然而意外卻還是不小心發生了。因為Unity專案中的資料與遊戲素材多又雜，導致我在清理檔案的時候不小心誤觸了開發資料夾以外的素材檔。當時的情況是&lt;strong&gt;我誤刪了資料夾以外的資源檔案(地形檔)&lt;/strong&gt;，再加上我不小心把雲端的資料給覆蓋過去(不清楚為何能Push上雲端，也許是用了force指令?)，&lt;strong&gt;導致另一人開發的關卡地形消失&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;鬧出了這麼大的鍋，好在最後經由Git將專案回朔到出事之前的版本才解決了版本不合的問題。在本周了解PR是怎麼一回事之後才發現，如果當初有學過這個操作，那是否就能避免檔案覆蓋的問題了呢?&lt;/p&gt;
+&lt;h4 id=&#34;pr的作用&#34;&gt;PR的作用&lt;/h4&gt;
+&lt;p&gt;當協作者想要將本地端的內容整合到雲端repo時，git push後會發送通知，&lt;strong&gt;請求(Request)該repo的原作做拉(pull)的動作&lt;/strong&gt;，所以叫做Pull Request。&lt;/p&gt;
+&lt;p&gt;這麼做的好處是可以&lt;strong&gt;避免其他協作者直接覆蓋檔案&lt;/strong&gt;，且原作在收到PR後可以&lt;strong&gt;比對程式碼並做審核的動作&lt;/strong&gt;，而每一次PR提交都會有紀錄可以做為追蹤。&lt;/p&gt;
+&lt;h4 id=&#34;第一次pr&#34;&gt;第一次PR&lt;/h4&gt;
+&lt;p&gt;為了做PR的練習，我找了gitHub上的一個名為[first-contributions](&lt;a class=&#34;link&#34; href=&#34;https://github.com/firstcontributions/first-contributions&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;firstcontributions/first-contributions: 🚀✨ Help beginners to contribute to open source projects (github.com)&lt;/a&gt;)的Public Repo，他的ReadMe.md文件上有詳細的PR教學，造著說明一步一步做即可。我將其歸納為以下幾步:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;fork 其他人的repo&lt;/li&gt;
+&lt;li&gt;clone repo到本地進行修改&lt;/li&gt;
+&lt;li&gt;本地修改(通常會另開branch)，並commit&lt;/li&gt;
+&lt;li&gt;push 到自己的gitHub repo上&lt;/li&gt;
+&lt;li&gt;提交PR&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;原作者同意PR(將你的branch整合到他repo的branch上)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;根據以上的步驟，我完成了第一次的PR，也成為了該repo的contributor !&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;3-google-analytics-與-google-search-console&#34;&gt;3. Google Analytics 與 Google Search Console&lt;/h3&gt;
+&lt;h4 id=&#34;搜尋&#34;&gt;搜尋???&lt;/h4&gt;
+&lt;p&gt;先前架設好這個Blog後我就一直在想，既然有辦法透過URL連結到此網站，那能不能被Google 搜尋到呢? 出於好奇搜索了一遍，無奈的是即使下了很精確的關鍵字仍然沒有顯示在搜尋結果中。&lt;/p&gt;
+&lt;p&gt;後來爬了一些網路文章後才得知網站要被google收錄需要一段時間，但等不及的我於是上網找了能盡快被收錄的方法，也就是&lt;strong&gt;主動向google登陸我的blog網站&lt;/strong&gt;。&lt;/p&gt;
+&lt;h4 id=&#34;gsc驗證&#34;&gt;GSC驗證&lt;/h4&gt;
+&lt;p&gt;登陸的方法就是在Google Search Console上&lt;strong&gt;驗證網站，並且提交sitemap.xml&lt;/strong&gt;，能讓網站早一點被收錄。google search console的驗證方法有很多種，而我很意外的選擇採用 &lt;strong&gt;Google Analytics驗證&lt;/strong&gt; 。&lt;/p&gt;
+&lt;p&gt;通過驗證的方法就是將GA提供的一段HTML標記給放到網站的&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;之間，這樣GA就能驗證網站是否有被登錄。再花了不少時間後才將HTML標記給放到靜態網站建置的網頁中，也順利地通過GA的驗證。&lt;/p&gt;
+&lt;p&gt;有了GA的驗證後，GSC的驗證也順利地通過，最後一步就是等待提交的sitemap被處理。當過程順利完成後，在google 搜尋引擎中輸入 &lt;strong&gt;site: 網址名&lt;/strong&gt; 即可在搜尋引擎中看到個人網站的連結。&lt;/p&gt;
+&lt;h4 id=&#34;結果&#34;&gt;結果&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://victorchao996.github.io/p/frontend_learning-fifth-week/googleSearch1.png&#34;
+	width=&#34;1272&#34;
+	height=&#34;697&#34;
+	srcset=&#34;https://victorchao996.github.io/p/frontend_learning-fifth-week/googleSearch1_huac020af9265fd3b37ceba596bb5b1f34_105565_480x0_resize_box_3.png 480w, https://victorchao996.github.io/p/frontend_learning-fifth-week/googleSearch1_huac020af9265fd3b37ceba596bb5b1f34_105565_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;成功在google search engine中搜尋到網站&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;182&#34;
+		data-flex-basis=&#34;437px&#34;
+	
+&gt;
+&lt;img src=&#34;https://victorchao996.github.io/p/frontend_learning-fifth-week/googleSearch2.png&#34;
+	width=&#34;1213&#34;
+	height=&#34;727&#34;
+	srcset=&#34;https://victorchao996.github.io/p/frontend_learning-fifth-week/googleSearch2_hu0aee665aa9f59d0f27a91d58cfd67768_98419_480x0_resize_box_3.png 480w, https://victorchao996.github.io/p/frontend_learning-fifth-week/googleSearch2_hu0aee665aa9f59d0f27a91d58cfd67768_98419_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;直接搜尋網站的title，綜合排名在第二名的位置😮。&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;166&#34;
+		data-flex-basis=&#34;400px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;我後來才發現GSC提供的驗證方法之一就包含在網站&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;中嵌入HTML標記的方式，只不過我意外地透過GA去驗證了GSC。結果就是我不僅完成了&lt;strong&gt;網站的被搜尋功能，也順道完成了網站串聯GA分析&lt;/strong&gt;😂。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://victorchao996.github.io/p/frontend_learning-fifth-week/googleAnalytics.png&#34;
+	width=&#34;1092&#34;
+	height=&#34;813&#34;
+	srcset=&#34;https://victorchao996.github.io/p/frontend_learning-fifth-week/googleAnalytics_hubdfea1cbeb05fa4aa977af2c6a5bcae9_61691_480x0_resize_box_3.png 480w, https://victorchao996.github.io/p/frontend_learning-fifth-week/googleAnalytics_hubdfea1cbeb05fa4aa977af2c6a5bcae9_61691_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Google Analytics網站數據分析截圖&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;134&#34;
+		data-flex-basis=&#34;322px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;結語&#34;&gt;結語&lt;/h2&gt;
+&lt;p&gt;這一周的學習內容並沒有著重在特定的主題，完全是興趣使然的結果，而我也在找尋資料並實作的過程中能慢慢地體會到&lt;strong&gt;做中學的快樂&lt;/strong&gt; 。若是未來的學習過程都能如此有趣的話，那每天額外花個3小時專研技術根本就不是問題，畢竟是有趣的對吧?&lt;/p&gt;
+&lt;p&gt;以上就是前端學習第五周的內容，下周開始是寒假的第一周，時間會充裕許多，我也能有更多的時間可以做學習，好好的充實自己。&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;參考資料:
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gideonwolfe.com/posts/sysadmin/hugo/hugogoogleanalytics/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Adding Google Analytics to your Hugo Site :: Gideon Wolfe&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://digitaldrummerj.me/hugo-google-analytics/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo - Add Google Analytics | Justin James (digitaldrummerj.me)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.shopjkl.com/pages/ga&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;2021經典版Google Analytics教學 教你看懂GA＆活用GA (shopjkl.com)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.seo-tea.com/google-search-console-tutorial/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;【完整指南】2022 Google Search Console教學(附索引問題處理) - SEO分解茶 (seo-tea.com)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
