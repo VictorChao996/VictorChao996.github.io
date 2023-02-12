@@ -6,7 +6,181 @@
         <description>Recent content in 前端學習之路 on Victor&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 22 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://victorchao996.github.io/categories/frontend_journey/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 12 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://victorchao996.github.io/categories/frontend_journey/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>第八周-複習 JS &amp; 初步認識 AWS</title>
+        <link>https://victorchao996.github.io/p/frontend_learning-8th-week/</link>
+        <pubDate>Sun, 12 Feb 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://victorchao996.github.io/p/frontend_learning-8th-week/</guid>
+        <description>&lt;img src="https://victorchao996.github.io/p/frontend_learning-8th-week/JavaScript.jpg" alt="Featured image of post 第八周-複習 JS &amp; 初步認識 AWS" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;這周還是繼續地在觀看Udemy上的課程，稍微不同的是Campus Program 前三週遠距學習的內容也公布了，趁著開學前最後一周還有時間的情況下加緊學習。&lt;/p&gt;
+&lt;h2 id=&#34;主要學習實作項目&#34;&gt;主要學習&amp;amp;實作項目&lt;/h2&gt;
+&lt;h3 id=&#34;javsscript&#34;&gt;JavsScript&lt;/h3&gt;
+&lt;p&gt;JS老朋友了，我認為學習JS比較麻煩的有以下幾點:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;語言本身存在怪異性&lt;/li&gt;
+&lt;li&gt;新的標準的推出(ES6)&lt;/li&gt;
+&lt;li&gt;需要區分JS原生或是瀏覽器提供的API
+總之學習JS比我想的還要漫長，因為需要顧慮的點特別多。我只能說阿，&lt;del&gt;不愧是十天內設計出來的語言&lt;/del&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;這周學習的項目為:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;JS basic&lt;/li&gt;
+&lt;li&gt;JS functions&lt;/li&gt;
+&lt;li&gt;JS DOM &amp;amp; JS events&lt;/li&gt;
+&lt;li&gt;JS 非同步程式&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AJAX &amp;amp; API&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;前四個算是複習了，主要新的學習內容為第五項。包含JSON的概念、使用，另外還包含call API(來獲取JSON)的練習。另外也接觸了API開發工具，相對瀏覽器的Dev tools來說，API工具可以在開發上可以更方便，例如: 觀看headers, JSON資料，或是設定query string等。&lt;/p&gt;
+&lt;h3 id=&#34;aws-cloud-service&#34;&gt;AWS Cloud Service&lt;/h3&gt;
+&lt;p&gt;Campus Program公布的遠距學習內容其中之一是AWS，比照此計畫的課程大綱&amp;amp;網路上的心得分享後，我猜是要將後端server建立在aws上。與其他領域不同，cloud service是我先前沒碰過的主題，因此在認識AWS的服務上也花了不少時間。&lt;/p&gt;
+&lt;p&gt;找了網路上關於aws的學習資源，在了解之餘也動手實作一些項目:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;註冊開通 AWS 帳號&lt;/li&gt;
+&lt;li&gt;使用IAM 申請user並給予權限&lt;/li&gt;
+&lt;li&gt;設置CloudWatch 監聽帳單規則(根據規則發送警訊)&lt;/li&gt;
+&lt;li&gt;新增一個EC2 linux instance&lt;/li&gt;
+&lt;li&gt;新增一個S3 bucket&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;因為AWS 提供的服務實在是太多了，光是要理解每個服務在幹嘛都要花上不少時間，所以下周還有得研究了。&lt;/p&gt;
+&lt;h2 id=&#34;總結&#34;&gt;總結&lt;/h2&gt;
+&lt;p&gt;這一周也是學習了不少新的知識，看著玲朗滿目的前後端知識不免感到焦慮，畢竟要熟悉這麼龐大的知識需要不少的時間，並且這之中還不包括實作&amp;amp;練習的時間🤯。這種遊走在舒適圈邊緣的感覺沒意外的話還會持續個十幾周，希望我能堅持下去! 給自己喊聲加油XD。&lt;/p&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;小馬技術aws系列: &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=G0hvLDTmXig&amp;amp;list=PLliocbKHJNwsyKkNwFUHbZZOJ2gT9qnT9&amp;amp;index=1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;AWS 中文入门开发教学YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;EC2 linus instance: &lt;a class=&#34;link&#34; href=&#34;https://docs.aws.amazon.com/zh_tw/AWSEC2/latest/UserGuide/EC2_GetStarted.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;教學課程：使用 Amazon EC2 Linux 執行個體 - Amazon Elastic Compute Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;AWS service鐵人賽文章: &lt;a class=&#34;link&#34; href=&#34;https://ithelp.ithome.com.tw/users/20083507/ironman/1366&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Amazon Cloud Service 30 days challenge :: 2018 iT 邦幫忙鐵人賽 (ithome.com.tw)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>第七周-購買 Udemy Bootcamp 課程</title>
+        <link>https://victorchao996.github.io/p/frontend_learning-7th-week/</link>
+        <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://victorchao996.github.io/p/frontend_learning-7th-week/</guid>
+        <description>&lt;img src="https://victorchao996.github.io/p/frontend_learning-7th-week/JavaScript.jpg" alt="Featured image of post 第七周-購買 Udemy Bootcamp 課程" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;相隔了兩個星期，終於又發布這個系列文章了😅。眼看當初設立的每周挑戰變得可有可無，我趕緊來補一下最新的進度。&lt;/p&gt;
+&lt;p&gt;上週農曆新年因為電腦不在身邊於是也就沒有任何學習。直到本周因為受不了如此沒有系統化的學習，再加上帳號頭一次購買有推出優惠，於是果斷購買了Udemy的線上課程。雖然為入門課程(Bootcamp)但是課程單元的數量可一點都不馬虎，兩門總計都為64小時的Web課程要全部花完也要花上不少時間。以下是主要學習的內容。&lt;/p&gt;
+&lt;h2 id=&#34;主要學習實作項目&#34;&gt;主要學習&amp;amp;實作項目&lt;/h2&gt;
+&lt;p&gt;已經有相關基礎的部分直接開兩倍速快速聽過，而簡單介紹屬性的單元就把練習題目做完便速速前往下一個單元。&lt;/p&gt;
+&lt;h3 id=&#34;web開發概念&#34;&gt;web開發概念&lt;/h3&gt;
+&lt;p&gt;在學習web 開發之前需要的各種基礎觀念:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;網路是什麼?&lt;/li&gt;
+&lt;li&gt;前後端的是什麼?&lt;/li&gt;
+&lt;li&gt;瀏覽器的作用?&lt;/li&gt;
+&lt;li&gt;HTML/CSS/JS 分別扮演什麼樣的角色?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;html&#34;&gt;HTML&lt;/h3&gt;
+&lt;p&gt;迅速看過，並做一點練習題目，至於table的部分我完全放掉，我認為以下幾點是學習HTML相對比較重要的內容。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Basic&lt;/li&gt;
+&lt;li&gt;HTML semantic&lt;/li&gt;
+&lt;li&gt;HTML form&lt;/li&gt;
+&lt;li&gt;form validation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;css&#34;&gt;CSS&lt;/h3&gt;
+&lt;p&gt;CSS的部分就是快速複習基礎觀念與屬性，主要的學習策略為多聽多看。雖說進階的部分現階段不是很熟，但我想至少要在實作的當下知道在MDN要搜索哪個關鍵字才好。至於BootStrap我沒有太深入去研究，只是稍微玩一下，等到需要使用的時候再續翻閱文件就好。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;basic&lt;/li&gt;
+&lt;li&gt;selector&lt;/li&gt;
+&lt;li&gt;container
+&lt;ul&gt;
+&lt;li&gt;div(block)&lt;/li&gt;
+&lt;li&gt;span(inline)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;display
+&lt;ul&gt;
+&lt;li&gt;block&lt;/li&gt;
+&lt;li&gt;inline&lt;/li&gt;
+&lt;li&gt;inline-block&lt;/li&gt;
+&lt;li&gt;none&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;box-model: content, padding, border, margin&lt;/li&gt;
+&lt;li&gt;box-sizing
+&lt;ul&gt;
+&lt;li&gt;content-box&lt;/li&gt;
+&lt;li&gt;border-box&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;position:
+&lt;ul&gt;
+&lt;li&gt;fixed&lt;/li&gt;
+&lt;li&gt;absolute&lt;/li&gt;
+&lt;li&gt;relative&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;transform
+&lt;ul&gt;
+&lt;li&gt;translate&lt;/li&gt;
+&lt;li&gt;rotate&lt;/li&gt;
+&lt;li&gt;skew&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;flexbox&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;main axis/cross axis 的觀念&lt;/li&gt;
+&lt;li&gt;flex-direction&lt;/li&gt;
+&lt;li&gt;justify-content&lt;/li&gt;
+&lt;li&gt;align-item&lt;/li&gt;
+&lt;li&gt;align-self&lt;/li&gt;
+&lt;li&gt;wrap&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RWD&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;media query&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CSS framework: Bootstrap&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;flexbox的部分老是看過就忘，名字真的傻傻分不清楚，找機會再做一個類似&lt;a class=&#34;link&#34; href=&#34;https://flexbox.help/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;display: flex (flexbox.help)&lt;/a&gt;的頁面來加深自己的印象好了。&lt;/p&gt;
+&lt;h3 id=&#34;terminal-cli&#34;&gt;Terminal (CLI)&lt;/h3&gt;
+&lt;p&gt;一些跟file處理相關的指令，先前就有藉由terminal來輸入git指令的經驗，這部分還算得心應手。稍微整理了一下比較就跳到下一個單元去了。&lt;a class=&#34;link&#34; href=&#34;https://victorchao996.gitbook.io/personal-notes/jie-shao-an-zhuang-zhi-ling/command-line-chang-yong-zhi-ling&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;command Line 常用指令 - Victor&amp;rsquo;s 程式開發筆記 (gitbook.io)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;nodejs&#34;&gt;Node.js&lt;/h3&gt;
+&lt;p&gt;雖然這是前端挑戰系列，但是全端網頁課程怎麼能沒有後端的部分呢? 以下是主要學習的內容:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;node是什麼?&lt;/li&gt;
+&lt;li&gt;node REPL&lt;/li&gt;
+&lt;li&gt;node JS runtime 與 brower的差異&lt;/li&gt;
+&lt;li&gt;範例 node 內建模組API : File System, HTTP&lt;/li&gt;
+&lt;li&gt;npm(node package manager)&lt;/li&gt;
+&lt;li&gt;node_modules 觀念&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;跟者課程的練習時做了一個簡單的node程式&lt;a class=&#34;link&#34; href=&#34;https://github.com/VictorChao996/weird-language-guesser&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;weird-language-guesser&lt;/a&gt;，順便練習npm install &amp;amp; import的動作(&lt;del&gt;雖然功能有點失敗就是了&lt;/del&gt;)&lt;/p&gt;
+&lt;h3 id=&#34;express&#34;&gt;Express&lt;/h3&gt;
+&lt;p&gt;若要使用node當作後端的server，通常不會使用內建HTTP module，而是使用npm上的package: Express。目前看了一半的內容:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;啟用server listen for requests&lt;/li&gt;
+&lt;li&gt;根據request 送出相對應的 response&lt;/li&gt;
+&lt;li&gt;routing 概念
+目前還沒看到EJS的部分，但是看完node.js 與 express 的部分影片讓我對於後端有更深的認識。在這過程中有更加了解瀏覽器送出請求後會發生什麼事，&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mongodb&#34;&gt;mongoDB&lt;/h3&gt;
+&lt;p&gt;這一part主要學習的內容是資料庫的觀念，並稍微玩一下:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SQL vs NoSQL&lt;/li&gt;
+&lt;li&gt;安裝mongoDB&lt;/li&gt;
+&lt;li&gt;下載並使用MongoDB shell&lt;/li&gt;
+&lt;li&gt;藉由MongoDB Shell 達到CRUD&lt;/li&gt;
+&lt;li&gt;更多的工具: &lt;a class=&#34;link&#34; href=&#34;https://mongoosejs.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Mongoose ODM v6.9.1 (mongoosejs.com)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;光是安裝的部分就花了不少時間QQ。&lt;/p&gt;
+&lt;h2 id=&#34;總結&#34;&gt;總結&lt;/h2&gt;
+&lt;p&gt;這一周也挺瘋狂的，接觸了不少新的觀念，尤其是學習Node真的打開了我的眼界。node解放了JS，使其能在瀏覽器以外的地方運行。另外node內建各種module能讓developer使用，再加上npm的出現，讓開發各種project變得更為容易，這現象從觀察 npm 前幾名package的weekly downloads 能略知一二。這周挑戰文章就先這樣，ㄅㄅ。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>第六周-JS事件傳遞委派、貢獻GibHub專案</title>
         <link>https://victorchao996.github.io/p/frontend_learning-sixth-week/</link>
         <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
