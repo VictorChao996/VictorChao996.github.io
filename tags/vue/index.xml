@@ -8,21 +8,21 @@
         <language>en-us</language>
         <lastBuildDate>Sun, 08 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://victorchao996.github.io/tags/vue/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>第四周-vue基礎</title>
-        <link>https://victorchao996.github.io/p/frontend_learning-fourth-week/</link>
+        <link>https://victorchao996.github.io/p/fullstack_learning-fourth-week/</link>
         <pubDate>Sun, 08 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://victorchao996.github.io/p/frontend_learning-fourth-week/</guid>
-        <description>&lt;img src="https://victorchao996.github.io/p/frontend_learning-fourth-week/JavaScript.jpg" alt="Featured image of post 第四周-vue基礎" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+        <guid>https://victorchao996.github.io/p/fullstack_learning-fourth-week/</guid>
+        <description>&lt;img src="https://victorchao996.github.io/p/fullstack_learning-fourth-week/JavaScript.jpg" alt="Featured image of post 第四周-vue基礎" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;上週學習的內容主要是Vue框架的基礎，在學習入門的過程(包含看書本、看教學影片、官方教學、文件等)時發現自己對於原生JS還不夠熟悉，以至於沒有辦法有效率的學習框架，或體會到使用前端框架的好處。僅能從其他人的介紹中得知使用Vue框架的一些好處。&lt;/p&gt;
 &lt;p&gt;雖然看了許多基礎內容，但有鑑於現階段學習Vue 會遇到相對尷尬的問題就是Vue 2 &amp;amp; Vue 3的不同。並且Vue 3 新增的Composition API 寫法又會使得跟著網路教材學習起來相對不太容易。有鑑於版本&amp;amp;不同的API風格，以下就整理一些Vue的共通觀念。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;主要學習內容&#34;&gt;主要學習內容&lt;/h2&gt;
 &lt;h3 id=&#34;mvvm-架構&#34;&gt;MVVM 架構&lt;/h3&gt;
 &lt;p&gt;以前有聽過MVC架構，也就是model-view-controller，是一種將應用程式分割成三種不同邏輯元件的&lt;strong&gt;設計模式&lt;/strong&gt;，有助於專案的協作開發。而不同的MVC架構，Vue參考了MVVM架構的設計，那什麼是MVVM架構?&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://victorchao996.github.io/p/frontend_learning-fourth-week/mvvm.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://victorchao996.github.io/p/fullstack_learning-fourth-week/mvvm.png&#34;
 	width=&#34;1600&#34;
 	height=&#34;850&#34;
-	srcset=&#34;https://victorchao996.github.io/p/frontend_learning-fourth-week/mvvm_hud42b3306f5891f5e1c1e0cd5099ec400_43685_480x0_resize_box_3.png 480w, https://victorchao996.github.io/p/frontend_learning-fourth-week/mvvm_hud42b3306f5891f5e1c1e0cd5099ec400_43685_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://victorchao996.github.io/p/fullstack_learning-fourth-week/mvvm_hud42b3306f5891f5e1c1e0cd5099ec400_43685_480x0_resize_box_3.png 480w, https://victorchao996.github.io/p/fullstack_learning-fourth-week/mvvm_hud42b3306f5891f5e1c1e0cd5099ec400_43685_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Vue MVVM 架構圖&#34;
@@ -325,11 +325,11 @@
         </item>
         <item>
         <title>第三周-初探Vue框架</title>
-        <link>https://victorchao996.github.io/p/frontend_learning-third-week/</link>
+        <link>https://victorchao996.github.io/p/fullstack_learning-third-week/</link>
         <pubDate>Sun, 25 Dec 2022 18:00:00 +0800</pubDate>
         
-        <guid>https://victorchao996.github.io/p/frontend_learning-third-week/</guid>
-        <description>&lt;img src="https://victorchao996.github.io/p/frontend_learning-third-week/JavaScript.jpg" alt="Featured image of post 第三周-初探Vue框架" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+        <guid>https://victorchao996.github.io/p/fullstack_learning-third-week/</guid>
+        <description>&lt;img src="https://victorchao996.github.io/p/fullstack_learning-third-week/JavaScript.jpg" alt="Featured image of post 第三周-初探Vue框架" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;第二周紀錄的主要學習內容是JavaScript的基礎&amp;amp;進階概念，而本周主要的學習內容是認識框架(Vue.js)。&lt;/p&gt;
 &lt;p&gt;在前端框架三支柱中(Angular、React、Vue)為什麼會選擇Vue來做學習呢? 其實是看中Vue框架主打的&lt;strong&gt;輕便性&lt;/strong&gt;，另外也聽說官方文件易於閱讀學習，於是就果斷選擇Vue來入門。&lt;/p&gt;
 &lt;h3 id=&#34;三大框架簡單比較&#34;&gt;三大框架簡單比較&lt;/h3&gt;

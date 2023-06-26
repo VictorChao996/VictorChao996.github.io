@@ -8,11 +8,11 @@
         <language>en-us</language>
         <lastBuildDate>Sun, 22 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://victorchao996.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>第六周-JS事件傳遞委派、貢獻GibHub專案</title>
-        <link>https://victorchao996.github.io/p/frontend_learning-sixth-week/</link>
+        <link>https://victorchao996.github.io/p/fullstack_learning-sixth-week/</link>
         <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://victorchao996.github.io/p/frontend_learning-sixth-week/</guid>
-        <description>&lt;img src="https://victorchao996.github.io/p/frontend_learning-sixth-week/JavaScript.jpg" alt="Featured image of post 第六周-JS事件傳遞委派、貢獻GibHub專案" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+        <guid>https://victorchao996.github.io/p/fullstack_learning-sixth-week/</guid>
+        <description>&lt;img src="https://victorchao996.github.io/p/fullstack_learning-sixth-week/JavaScript.jpg" alt="Featured image of post 第六周-JS事件傳遞委派、貢獻GibHub專案" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;本周是寒假的第一周，這周也是比較零散的學習&amp;amp;實作，簡單記錄一下。&lt;/p&gt;
 &lt;h2 id=&#34;學習與實作&#34;&gt;學習與實作&lt;/h2&gt;
 &lt;h3 id=&#34;1-js-events-傳遞委派&#34;&gt;1. JS Events 傳遞&amp;amp;委派&lt;/h3&gt;
@@ -22,10 +22,10 @@
     &gt;hail2u/html-best-practices: For writing maintainable and scalable HTML documents (github.com)&lt;/a&gt;，裡面有著關於HTML最佳實務的.md 檔案，以及對應各種語言的翻譯檔。再看到這個repository的當下我就蹦出了我也許可以為這個文件做翻譯檔的想法，抱著試試看的心情，於是我就clone了repo到電腦上。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;翻譯的當下花了不少時間，但一想到我的付出也許能幫助到一些人就給了我繼續的動力&lt;/strong&gt;。儘管有簡體中文的翻譯文件可以參考，但是看完並修改全長1500行的文件也是花了不少時間。抱著忐忑的心情，我送出了第一個正式的PR。&lt;/p&gt;
 &lt;p&gt;與上一篇提到repo不同，這次的PR不是CI/CD自動審核的，而是真人審核並同意PR，好在最後成功通過PR，我也成為了該repo的contributor👍。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://victorchao996.github.io/p/frontend_learning-sixth-week/firstPR.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://victorchao996.github.io/p/fullstack_learning-sixth-week/firstPR.png&#34;
 	width=&#34;1321&#34;
 	height=&#34;468&#34;
-	srcset=&#34;https://victorchao996.github.io/p/frontend_learning-sixth-week/firstPR_hu62343c65738dc5d6cfc606e3c88cbe49_49884_480x0_resize_box_3.png 480w, https://victorchao996.github.io/p/frontend_learning-sixth-week/firstPR_hu62343c65738dc5d6cfc606e3c88cbe49_49884_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://victorchao996.github.io/p/fullstack_learning-sixth-week/firstPR_hu62343c65738dc5d6cfc606e3c88cbe49_49884_480x0_resize_box_3.png 480w, https://victorchao996.github.io/p/fullstack_learning-sixth-week/firstPR_hu62343c65738dc5d6cfc606e3c88cbe49_49884_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;第一次通過真人接受的PR&#34;
@@ -43,11 +43,11 @@
         </item>
         <item>
         <title>第五周-JS DOM、PR、GSC</title>
-        <link>https://victorchao996.github.io/p/frontend_learning-fifth-week/</link>
+        <link>https://victorchao996.github.io/p/fullstack_learning-fifth-week/</link>
         <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://victorchao996.github.io/p/frontend_learning-fifth-week/</guid>
-        <description>&lt;img src="https://victorchao996.github.io/p/frontend_learning-fifth-week/JavaScript.jpg" alt="Featured image of post 第五周-JS DOM、PR、GSC" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+        <guid>https://victorchao996.github.io/p/fullstack_learning-fifth-week/</guid>
+        <description>&lt;img src="https://victorchao996.github.io/p/fullstack_learning-fifth-week/JavaScript.jpg" alt="Featured image of post 第五周-JS DOM、PR、GSC" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;大四上學期的最後一周，雖說部分科目在上星期陸續就考完結束了，但這周仍有考試&amp;amp;部分課堂活動。於是我就趁著空閒的時間去玩一點不一樣的項目。&lt;/p&gt;
 &lt;h2 id=&#34;主要學習內容&#34;&gt;主要學習內容&lt;/h2&gt;
 &lt;h3 id=&#34;1-js-html-dom&#34;&gt;1. JS HTML DOM&lt;/h3&gt;
@@ -183,10 +183,10 @@
 &lt;p&gt;通過驗證的方法就是將GA提供的一段HTML標記給放到網站的&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;之間，這樣GA就能驗證網站是否有被登錄。再花了不少時間後才將HTML標記給放到靜態網站建置的網頁中，也順利地通過GA的驗證。&lt;/p&gt;
 &lt;p&gt;有了GA的驗證後，GSC的驗證也順利地通過，最後一步就是等待提交的sitemap被處理。當過程順利完成後，在google 搜尋引擎中輸入 &lt;strong&gt;site: 網址名&lt;/strong&gt; 即可在搜尋引擎中看到個人網站的連結。&lt;/p&gt;
 &lt;h4 id=&#34;結果&#34;&gt;結果&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&#34;https://victorchao996.github.io/p/frontend_learning-fifth-week/googleSearch1.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://victorchao996.github.io/p/fullstack_learning-fifth-week/googleSearch1.png&#34;
 	width=&#34;1272&#34;
 	height=&#34;697&#34;
-	srcset=&#34;https://victorchao996.github.io/p/frontend_learning-fifth-week/googleSearch1_huac020af9265fd3b37ceba596bb5b1f34_105565_480x0_resize_box_3.png 480w, https://victorchao996.github.io/p/frontend_learning-fifth-week/googleSearch1_huac020af9265fd3b37ceba596bb5b1f34_105565_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://victorchao996.github.io/p/fullstack_learning-fifth-week/googleSearch1_huac020af9265fd3b37ceba596bb5b1f34_105565_480x0_resize_box_3.png 480w, https://victorchao996.github.io/p/fullstack_learning-fifth-week/googleSearch1_huac020af9265fd3b37ceba596bb5b1f34_105565_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;成功在google search engine中搜尋到網站&#34;
@@ -197,10 +197,10 @@
 		data-flex-basis=&#34;437px&#34;
 	
 &gt;
-&lt;img src=&#34;https://victorchao996.github.io/p/frontend_learning-fifth-week/googleSearch2.png&#34;
+&lt;img src=&#34;https://victorchao996.github.io/p/fullstack_learning-fifth-week/googleSearch2.png&#34;
 	width=&#34;1213&#34;
 	height=&#34;727&#34;
-	srcset=&#34;https://victorchao996.github.io/p/frontend_learning-fifth-week/googleSearch2_hu0aee665aa9f59d0f27a91d58cfd67768_98419_480x0_resize_box_3.png 480w, https://victorchao996.github.io/p/frontend_learning-fifth-week/googleSearch2_hu0aee665aa9f59d0f27a91d58cfd67768_98419_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://victorchao996.github.io/p/fullstack_learning-fifth-week/googleSearch2_hu0aee665aa9f59d0f27a91d58cfd67768_98419_480x0_resize_box_3.png 480w, https://victorchao996.github.io/p/fullstack_learning-fifth-week/googleSearch2_hu0aee665aa9f59d0f27a91d58cfd67768_98419_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;直接搜尋網站的title，綜合排名在第二名的位置😮。&#34;
@@ -212,10 +212,10 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我後來才發現GSC提供的驗證方法之一就包含在網站&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;中嵌入HTML標記的方式，只不過我意外地透過GA去驗證了GSC。結果就是我不僅完成了&lt;strong&gt;網站的被搜尋功能，也順道完成了網站串聯GA分析&lt;/strong&gt;😂。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://victorchao996.github.io/p/frontend_learning-fifth-week/googleAnalytics.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://victorchao996.github.io/p/fullstack_learning-fifth-week/googleAnalytics.png&#34;
 	width=&#34;1092&#34;
 	height=&#34;813&#34;
-	srcset=&#34;https://victorchao996.github.io/p/frontend_learning-fifth-week/googleAnalytics_hubdfea1cbeb05fa4aa977af2c6a5bcae9_61691_480x0_resize_box_3.png 480w, https://victorchao996.github.io/p/frontend_learning-fifth-week/googleAnalytics_hubdfea1cbeb05fa4aa977af2c6a5bcae9_61691_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://victorchao996.github.io/p/fullstack_learning-fifth-week/googleAnalytics_hubdfea1cbeb05fa4aa977af2c6a5bcae9_61691_480x0_resize_box_3.png 480w, https://victorchao996.github.io/p/fullstack_learning-fifth-week/googleAnalytics_hubdfea1cbeb05fa4aa977af2c6a5bcae9_61691_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Google Analytics網站數據分析截圖&#34;
