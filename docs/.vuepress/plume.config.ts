@@ -12,7 +12,7 @@
 
 import { defineThemeConfig } from 'vuepress-theme-plume'
 import { enCollections, zhCollections } from './collections'
-import { enNavbar, zhNavbar } from './navbar'
+import { enNavbar, zhTwNavbar } from './navbar'
 
 /**
  * @see https://theme-plume.vuejs.press/config/basic/
@@ -66,7 +66,7 @@ export default defineThemeConfig({
         // organization: '',
       },
 
-      navbar: zhNavbar,
+      navbar: zhTwNavbar,
       collections: zhCollections,
 
       /**
