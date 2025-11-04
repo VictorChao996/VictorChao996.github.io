@@ -18,7 +18,7 @@ import { enNavbar, zhTwNavbar } from './navbar'
  * @see https://theme-plume.vuejs.press/config/basic/
  */
 export default defineThemeConfig({
-  logo: 'https://theme-plume.vuejs.press/plume.png',
+  logo: '../img/avatar.jpeg',
 
   appearance: true,  // 配置 深色模式
 
@@ -37,13 +37,13 @@ export default defineThemeConfig({
 
   // prevPage: true,   // 是否启用上一页链接
   // nextPage: true,   // 是否启用下一页链接
-  // createTime: true, // 是否显示文章创建时间
+  createTime: true, // 是否显示文章创建时间
 
   /* 站点页脚 */
-  // footer: {
-  //   message: 'Power by <a target="_blank" href="https://v2.vuepress.vuejs.org/">VuePress</a> & <a target="_blank" href="https://theme-plume.vuejs.press">vuepress-theme-plume</a>',
-  //   copyright: '',
-  // },
+  footer: {
+    message: 'Copyright © 2025 The Victor Within | Power by <a target="_blank" href="https://v2.vuepress.vuejs.org/">VuePress</a> & <a target="_blank" href="https://theme-plume.vuejs.press">vuepress-theme-plume</a>',
+    copyright: '',
+  },
 
   /* 过渡动画 @see https://theme-plume.vuejs.press/config/basic/#transition */
   // transition: {
@@ -58,11 +58,11 @@ export default defineThemeConfig({
        * @see https://theme-plume.vuejs.press/config/basic/#profile
        */
       profile: {
-        avatar: 'https://theme-plume.vuejs.press/plume.png',
-        name: 'My Vuepress Site',
-        description: '',
-        // circle: true,
-        // location: '',
+        avatar: '../img/avatar.jpeg',
+        name: 'VictorChao996',
+        description: '隨記中心，記錄學習思考與洞見',
+        circle: true,
+        location: 'Taipei, Taiwan',
         // organization: '',
       },
 
@@ -85,11 +85,11 @@ export default defineThemeConfig({
        * @see https://theme-plume.vuejs.press/config/basic/#profile
        */
       profile: {
-        avatar: 'https://theme-plume.vuejs.press/plume.png',
-        name: 'My Vuepress Site',
-        description: '',
-        // circle: true,
-        // location: '',
+        avatar: '../img/avatar.jpeg',
+        name: 'The Victor Within',
+        // description: '',
+        circle: true,
+        location: 'Taipei, Taiwan',
         // organization: '',
       },
 

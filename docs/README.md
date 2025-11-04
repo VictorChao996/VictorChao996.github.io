@@ -8,19 +8,21 @@ config:
     effect: tint-plate
     forceDark: true
     hero:
-      name: Theme Plume
-      tagline: VuePress Next Theme
-      text: 一些文字在這邊
+      name: The Victor Within
+      tagline: Thought Refined Shines
+      text: 安靜沉思帶來的勝利。透過閱讀與寫作，這裡致力於解鎖洞察力，並揭示生活中每個篇章背後隱藏的邏輯。
       actions:
         -
           theme: brand
-          text: Blog
+          text: Blog →
           link: /blog/
         -
           theme: alt
-          text: 數位花園 →
-          link: https://github.com/pengzhanbo/vuepress-theme-plume
-
+          text: 我的數位花園 →
+          link: https://digital-garden-victor-notes.vercel.app/
+  - 
+    type: posts
+    collection: blog
 signDown: true
 ---
 
