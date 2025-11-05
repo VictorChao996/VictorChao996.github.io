@@ -5,7 +5,13 @@ config:
   -
     type: hero
     full: true
-    effect: tint-plate
+    # effect: tint-plate
+    effect: orb
+    effectConfig:
+      hue: 5
+      hoverIntensity: 0.1
+      rotateOnHover: false
+      forceHoverState: false
     forceDark: true
     hero:
       name: The Victor Within

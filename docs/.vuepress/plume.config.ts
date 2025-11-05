@@ -18,7 +18,7 @@ import { enNavbar, zhTwNavbar } from './navbar'
  * @see https://theme-plume.vuejs.press/config/basic/
  */
 export default defineThemeConfig({
-  logo: '../img/avatar.jpeg',
+  logo: '../assets/avatar.jpeg',
 
   appearance: true,  // 配置 深色模式
 
@@ -58,7 +58,7 @@ export default defineThemeConfig({
        * @see https://theme-plume.vuejs.press/config/basic/#profile
        */
       profile: {
-        avatar: '../img/avatar.jpeg',
+        avatar: '../assets/avatar.jpeg',
         name: 'VictorChao996',
         description: '隨記中心，記錄學習思考與洞見',
         circle: true,
@@ -85,7 +85,7 @@ export default defineThemeConfig({
        * @see https://theme-plume.vuejs.press/config/basic/#profile
        */
       profile: {
-        avatar: '../img/avatar.jpeg',
+        avatar: '../assets/avatar.jpeg',
         name: 'The Victor Within',
         // description: '',
         circle: true,

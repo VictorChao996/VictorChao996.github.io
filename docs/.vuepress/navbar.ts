@@ -13,7 +13,10 @@ export const zhTwNavbar = defineNavbarConfig([
   { text: '過往文章', link: '/blog/archives/' },
   {
     text: '筆記',
-    items: [{ text: '示例', link: '/notes/README.md' }]
+    link: '/notes/',
+    // items: [{ text: '示例', link: '/notes/' },
+    // { text: '示例2', link: '/notes/foo.md' }
+    // ]
   },
   { text: '關於', link: '/about/' },
 ])
