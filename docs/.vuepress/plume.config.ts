@@ -64,7 +64,7 @@ export default defineThemeConfig({
        */
       profile: {
         avatar: './avatar.jpeg',
-        name: 'VictorChao996',
+        name: 'Victor 勝利',
         description: '隨記中心，記錄學習思考與洞見',
         circle: true,
         location: 'Taipei, Taiwan',
