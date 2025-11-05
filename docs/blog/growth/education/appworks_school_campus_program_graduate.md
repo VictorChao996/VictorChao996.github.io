@@ -10,7 +10,7 @@ permalink: /blog/fxkr403d/
 # AppWorks School Campus Program #3 結業心得
 
 ::: info
-這篇貼文是文章備份, 原始文章發表在 AppWorks School (現改名 AiWorks) 的Medium 上, https://medium.com/appworks-school/appworks-school-campus-program-3-%E7%B5%90%E6%A5%AD%E5%BF%83%E5%BE%97-e4ccf85247b8
+這篇貼文是文章備份, 原始文章發表在 AppWorks School (現改名 AiWorks) 的Medium 上, [AppWorks School Campus Program #3 結業心得](https://medium.com/appworks-school/appworks-school-campus-program-3-%E7%B5%90%E6%A5%AD%E5%BF%83%E5%BE%97-e4ccf85247b8)
 :::
 
 ---

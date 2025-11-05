@@ -18,12 +18,17 @@ import { enNavbar, zhTwNavbar } from './navbar'
  * @see https://theme-plume.vuejs.press/config/basic/
  */
 export default defineThemeConfig({
-  logo: '../assets/avatar.jpeg',
+  logo: './avatar.jpeg',
 
   appearance: true,  // 配置 深色模式
 
   social: [
-    { icon: 'github', link: '/' },
+    { icon: 'github', link: 'https://github.com/VictorChao996' },
+    { icon: {
+      svg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44"/></svg>',
+      name: 'Email',
+      }, link: 'mailto:96094victor@gmail.com'
+    }
   ],
   // navbarSocialInclude: ['github'], // 允许显示在导航栏的 social 社交链接
   // aside: true, // 页内侧边栏， 默认显示在右侧
@@ -58,7 +63,7 @@ export default defineThemeConfig({
        * @see https://theme-plume.vuejs.press/config/basic/#profile
        */
       profile: {
-        avatar: '../assets/avatar.jpeg',
+        avatar: './avatar.jpeg',
         name: 'VictorChao996',
         description: '隨記中心，記錄學習思考與洞見',
         circle: true,
@@ -85,7 +90,7 @@ export default defineThemeConfig({
        * @see https://theme-plume.vuejs.press/config/basic/#profile
        */
       profile: {
-        avatar: '../assets/avatar.jpeg',
+        avatar: './avatar.jpeg',
         name: 'The Victor Within',
         // description: '',
         circle: true,
