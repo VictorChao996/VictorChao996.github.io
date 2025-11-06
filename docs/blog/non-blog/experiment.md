@@ -3,6 +3,7 @@ outline: deep
 title: experiment
 createTime: 2024/11/03 10:12:54
 permalink: /blogs/3219whfn/
+draft: true
 ---
 
 # Experiment
