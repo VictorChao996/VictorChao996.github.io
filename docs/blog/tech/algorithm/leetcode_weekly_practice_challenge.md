@@ -4,7 +4,7 @@ outline: deep
 date: 2024-11-02T00:00:00.000Z
 lastUpdated: true
 createTime: 2024/11/24 20:42:19
-permalink: /blog/846o83s5/
+permalink: /blogs/846o83s5/
 tags: 
   - leetcode
   - weekly practice

@@ -4,7 +4,7 @@ outline: deep
 lastUpdated: 2023-02-13T00:00:00.000Z
 date: 2023-02-13T00:00:00.000Z
 createTime: 2023/02/13 15:19:56
-permalink: /blog/7ny70mcd/
+permalink: /blogs/7ny70mcd/
 tags:
     - javascript 
     - weekly practice

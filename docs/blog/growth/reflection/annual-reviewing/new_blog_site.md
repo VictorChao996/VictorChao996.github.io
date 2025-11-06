@@ -4,7 +4,7 @@ outline: deep
 date: 2024-11-03T00:00:00.000Z
 lastUpdated: true
 createTime: 2024/11/03 10:12:54
-permalink: /blog/20qqpzzu/
+permalink: /blogs/20qqpzzu/
 ---
 # Blog 搬家了
 ## 起因
@@ -61,7 +61,7 @@ permalink: /blog/20qqpzzu/
 不過個人目前還是希望能專注在產出文章上, 先把寫作習慣建立起來, 有時間再來寫寫能夠擴充此 blog 的工具。
 
 ## 結果
-經過一番研究與嘗試, 這個 blog 終於架設起來了, 目前公開訪問 url 為: https://victorchao996.github.io/blog/ , 與跟 doc 差在 io 後面的路徑從 /docs2 換成 /blog。 雖然現在還很簡陋, 不過只要符合 [2024 年尾的 6 個月個人 & 職涯目標](../goal-setting/2024_6_month_goal.md) 中提到持續輸出的目標: **每週發佈一篇 blog 文章**, 有這樣一個可以公開發佈寫作文章的平台, 很堪用了。後續若有更多關於本 blog 的設置 & 開發, 會另外寫成文章並附在下方的 "相關文章" 連結中。
+經過一番研究與嘗試, 這個 blog 終於架設起來了, 目前公開訪問 url 為: https://victorchao996.github.io/blogs/ , 與跟 doc 差在 io 後面的路徑從 /docs2 換成 /blog。 雖然現在還很簡陋, 不過只要符合 [2024 年尾的 6 個月個人 & 職涯目標](../goal-setting/2024_6_month_goal.md) 中提到持續輸出的目標: **每週發佈一篇 blog 文章**, 有這樣一個可以公開發佈寫作文章的平台, 很堪用了。後續若有更多關於本 blog 的設置 & 開發, 會另外寫成文章並附在下方的 "相關文章" 連結中。
 
 
 ## 相關文章

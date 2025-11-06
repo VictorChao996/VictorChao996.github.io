@@ -5,7 +5,7 @@ date: 2025-02-02T00:00:00.000Z
 lastUpdated: true
 timespent: 150
 createTime: 2025/02/03 13:03:06
-permalink: /blog/jgceex6n/
+permalink: /blogs/jgceex6n/
 ---
 
 # 2024年尾六個月個人目標執行回顧

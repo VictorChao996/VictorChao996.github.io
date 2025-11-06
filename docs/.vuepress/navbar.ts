@@ -8,9 +8,9 @@ import { defineNavbarConfig } from 'vuepress-theme-plume'
 
 export const zhTwNavbar = defineNavbarConfig([
   { text: '首頁', link: '/' },
-  { text: 'Blog', link: '/blog/' },
-  { text: '文章標籤', link: '/blog/tags/' },
-  { text: '過往文章', link: '/blog/archives/' },
+  { text: 'Blog', link: '/blogs/' },
+  { text: '文章標籤', link: '/blogs/tags/' },
+  { text: '過往文章', link: '/blogs/archives/' },
   {
     text: '筆記',
     link: '/notes/',
@@ -23,9 +23,9 @@ export const zhTwNavbar = defineNavbarConfig([
 
 export const enNavbar = defineNavbarConfig([
   { text: 'Home', link: '/en/' },
-  { text: 'Blog', link: '/en/blog/' },
-  { text: 'Tags', link: '/en/blog/tags/' },
-  { text: 'Archives', link: '/en/blog/archives/' },
+  { text: 'Blog', link: '/en/blogs/' },
+  { text: 'Tags', link: '/en/blogs/tags/' },
+  { text: 'Archives', link: '/en/blogs/archives/' },
   {
     text: 'Notes',
     items: [{ text: 'Demo', link: '/en/demo/README.md' }]

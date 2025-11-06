@@ -21,7 +21,7 @@ config:
         -
           theme: brand
           text: Blog →
-          link: /blog/
+          link: /blogs/
         -
           theme: alt
           text: 我的數位花園 →

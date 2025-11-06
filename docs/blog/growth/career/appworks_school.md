@@ -4,7 +4,7 @@ outline: deep
 lastUpdated: 2022-12-11T00:00:00.000Z
 date: 2022-12-11T00:00:00.000Z
 createTime: 2022/12/11 15:20:22
-permalink: /blog/gqg9whq1/
+permalink: /blogs/gqg9whq1/
 ---
 
 # AppWorks School Campus Program 面試

@@ -4,7 +4,7 @@ outline: deep
 lastUpdated: 2022-07-05T00:00:00.000Z
 date: 2022-07-05T00:00:00.000Z
 createTime: 2022/07/05 15:18:23
-permalink: /blog/foyn6tr9/
+permalink: /blogs/foyn6tr9/
 ---
 # 關於大三專題我學到的十件事
 ## 前言

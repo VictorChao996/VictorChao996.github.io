@@ -4,7 +4,7 @@ outline: deep
 lastUpdated: 2022-09-16T00:00:00.000Z
 date: 2022-09-16T00:00:00.000Z
 createTime: 2022/09/16 15:18:48
-permalink: /blog/f8w1wkes/
+permalink: /blogs/f8w1wkes/
 ---
 # 從Deadlock(死結)的觀點來分析黃色網狀線的作用
 ## 黃色網狀腺?

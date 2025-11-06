@@ -3,7 +3,7 @@ name: deploy
 on:
   # 每當 push 到 main 分支時觸發部署
   push:
-    branches: [main]
+    branches: [main, dev]
   # 手動觸發部署
   workflow_dispatch:
 

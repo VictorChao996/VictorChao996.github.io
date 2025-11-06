@@ -5,7 +5,7 @@ date: 2024-11-10T00:00:00.000Z
 lastUpdated: true
 timespent (min): 240
 createTime: 2024/11/10 17:35:09
-permalink: /blog/sl6m2ovt/
+permalink: /blogs/sl6m2ovt/
 ---
 
 # 新鮮人工作半年回顧 （上）

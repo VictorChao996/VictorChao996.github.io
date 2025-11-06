@@ -3,7 +3,7 @@ title: Markdown
 tags:
   - markdown
 createTime: 2025/10/29 21:09:06
-permalink: /blog/lhv6jka2/
+permalink: /blogs/lhv6jka2/
 ---
 
 ## 标题H2

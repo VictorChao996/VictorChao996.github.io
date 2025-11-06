@@ -5,7 +5,7 @@ date: 2024-12-01T00:00:00.000Z
 lastUpdated: true
 timespent: 170
 createTime: 2024/12/01 18:12:47
-permalink: /blog/2f1c1jrj/
+permalink: /blogs/2f1c1jrj/
 tags: 
   - leetcode
   - weekly practice

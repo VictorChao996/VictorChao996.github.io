@@ -4,8 +4,8 @@ outline: deep
 date: 2024-11-17T00:00:00.000Z
 lastUpdated: true
 timespent: 170
-createTime: 2024/12/01 18:03:54
-permalink: /blog/aaa7fdgp/
+createTime: 2024/11/17 18:03:54
+permalink: /blogs/aaa7fdgp/
 tags: 
   - leetcode
   - weekly practice

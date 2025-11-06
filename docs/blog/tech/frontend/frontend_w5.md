@@ -4,7 +4,7 @@ outline: deep
 lastUpdated: 2023-01-15T00:00:00.000Z
 date: 2023-01-15T00:00:00.000Z
 createTime: 2023/01/15 15:19:40
-permalink: /blog/oppjabt4/
+permalink: /blogs/oppjabt4/
 tags:
     - javascript 
     - weekly practice

@@ -2,7 +2,7 @@
 outline: deep
 title: experiment
 createTime: 2024/11/03 10:12:54
-permalink: /blog/3219whfn/
+permalink: /blogs/3219whfn/
 ---
 
 # Experiment

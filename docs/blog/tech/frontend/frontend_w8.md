@@ -4,7 +4,7 @@ outline: deep
 lastUpdated: 2023-02-13T00:00:00.000Z
 date: 2023-02-13T00:00:00.000Z
 createTime: 2023/02/13 15:20:05
-permalink: /blog/gb9pqjfl/
+permalink: /blogs/gb9pqjfl/
 tags:
     - javascript 
     - weekly practice
