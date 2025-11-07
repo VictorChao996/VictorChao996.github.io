@@ -7,28 +7,29 @@
 import { defineNavbarConfig } from 'vuepress-theme-plume'
 
 export const zhTwNavbar = defineNavbarConfig([
-  { text: '首頁', link: '/' },
-  { text: 'Blog', link: '/blogs/' },
-  { text: '文章標籤', link: '/blogs/tags/' },
-  { text: '過往文章', link: '/blogs/archives/' },
+  { text: '首頁', link: '/', icon: 'material-symbols:home-rounded' },
+  { text: 'Blog', link: '/blogs/', icon: 'material-symbols:article-rounded' },
+  { text: '文章標籤', link: '/blogs/tags/', icon: 'material-symbols:label-rounded' },
+  { text: '過往文章', link: '/blogs/archives/', icon: 'material-symbols:archive-rounded' },
   {
     text: '筆記',
     link: '/notes/',
+    icon: 'material-symbols:note-rounded',
     // items: [{ text: '示例', link: '/notes/' },
     // { text: '示例2', link: '/notes/foo.md' }
     // ]
   },
-  { text: '關於', link: '/about/' },
+  { text: '關於', link: '/about/', icon: 'material-symbols:info-rounded' },
 ])
 
 export const enNavbar = defineNavbarConfig([
-  { text: 'Home', link: '/en/' },
-  { text: 'Blog', link: '/en/blogs/' },
-  { text: 'Tags', link: '/en/blogs/tags/' },
-  { text: 'Archives', link: '/en/blogs/archives/' },
+  { text: 'Home', link: '/en/', icon: 'material-symbols:home-rounded' },
+  { text: 'Blog', link: '/en/blogs/', icon: 'material-symbols:article-rounded' },
+  { text: 'Tags', link: '/en/blogs/tags/', icon: 'material-symbols:label-rounded' },
+  { text: 'Archives', link: '/en/blogs/archives/', icon: 'material-symbols:archive-rounded' },
   {
     text: 'Notes',
-    items: [{ text: 'Demo', link: '/en/demo/README.md' }]
+    items: [{ text: 'Demo', link: '/en/demo/README.md', icon: 'material-symbols:note-rounded' }]
   },
 ])
 

@@ -50,7 +50,7 @@ tags:
 
 撇除這兩週遇到年假休息之外, 在這之前**連續 11 周**達到設定的標準, 並且也一同完成*持續輸出*的目標, 將每週完成的三個題目以分享解答的方式寫成簡單的文章, 每週持續發佈在個人 blog 中。
 
-> 延伸閱讀：[Leetcode weekly practice](./leetcode_weekly_practice/leetcode_weekly_practice_challenge.md)
+> 延伸閱讀：[Leetcode weekly practice](../../../tech/algorithm/leetcode_weekly_practice_challenge.md)
 
 回過頭來, 已經做了不下 40 多題 leetcode 了, 雖然當中也有不少是過去曾經寫過的經典題目, 但是這過程中我仍然學到很多。雖然是由儉入奢, 但是能連續 11 周達成兩個行動目標對我個人來說仍是很大的鼓勵鼓勵, 增加我不少的信心。 
 

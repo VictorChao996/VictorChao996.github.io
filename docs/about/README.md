@@ -28,6 +28,17 @@ config:
     #     name: VictorChao996
     #     description: Hi! 我是 V, 你可以叫我 Victor, 也可以叫我勝利。歡迎來到我的個人網站！
     #     image: ./avatar.jpeg
+    # -
+        # type: features
+        # features:
+        #     -
+        #         title: 網站簡介
+        #         details: 這個網站是使用 VuePress & Plume 主題所建立的個人網站, 主要用來分享我的學習筆記與文章。希望能夠透過寫作來提升自己的思維與表達能力, 也希望能夠與有緣的讀者交流互動。
+        #     -
+        #         title: 技術棧
+        #         details: VuePress, Vue 3, TypeScript, Plume Theme, GitHub Pages
+        #     -
+        #         title: 內容分類
+        #         details: Blog 文章, 技術筆記, 個人心得
 
-    
 ---
