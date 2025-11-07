@@ -5,6 +5,10 @@ date: 2023-11-08T00:00:00.000Z
 lastUpdated: 2024-10-25T00:00:00.000Z
 createTime: 2023/11/08 09:47:48
 permalink: /blogs/mlgirj1p/
+tag: 
+  - internship
+  - QA
+  - testing
 ---
 ::: info
 這篇是備份文章, 原發佈位置在 LinkedIn 上: https://www.linkedin.com/pulse/intership-experience-ikala-victor-chao-qcjkc/

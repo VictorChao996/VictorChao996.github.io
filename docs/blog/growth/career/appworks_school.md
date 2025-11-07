@@ -5,6 +5,8 @@ lastUpdated: 2022-12-11T00:00:00.000Z
 date: 2022-12-11T00:00:00.000Z
 createTime: 2022/12/11 15:20:22
 permalink: /blogs/gqg9whq1/
+tags: 
+  - appworks school
 ---
 
 # AppWorks School Campus Program 面試

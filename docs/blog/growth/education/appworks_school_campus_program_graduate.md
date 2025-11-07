@@ -5,6 +5,9 @@ lastUpdated: 2023-07-27T00:00:00.000Z
 date: 2023-07-27T00:00:00.000Z
 createTime: 2023/07/27 09:46:13
 permalink: /blogs/fxkr403d/
+tags:
+    - appworks school
+    - graduation
 ---
 
 # AppWorks School Campus Program #3 結業心得

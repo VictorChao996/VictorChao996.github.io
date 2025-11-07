@@ -5,6 +5,8 @@ date: 2024-11-03T00:00:00.000Z
 lastUpdated: true
 createTime: 2024/11/03 10:12:54
 permalink: /blogs/20qqpzzu/
+tags:
+  - blog
 ---
 # Blog 搬家了
 ## 起因

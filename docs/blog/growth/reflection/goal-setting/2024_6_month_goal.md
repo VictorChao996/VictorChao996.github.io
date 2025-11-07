@@ -5,6 +5,9 @@ date: 2024-10-27T00:00:00.000Z
 lastUpdated: true
 createTime: 2024/10/27 13:04:16
 permalink: /blogs/t146rekh/
+tags:
+  - goal setting
+  - reflection
 ---
 
 # 2024 年尾的 6 個月個人 & 職涯目標

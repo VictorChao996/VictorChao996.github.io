@@ -5,6 +5,9 @@ lastUpdated: 2022-12-18T00:00:00.000Z
 date: 2022-12-18T00:00:00.000Z
 createTime: 2022/12/18 15:20:38
 permalink: /blogs/big1men0/
+tags:
+    - reading
+    - reflection
 ---
 # 書本閱讀系列-首篇
 ## 前言

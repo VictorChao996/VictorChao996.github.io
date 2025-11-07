@@ -5,6 +5,8 @@ lastUpdated: 2023-02-07T00:00:00.000Z
 date: 2023-02-07T00:00:00.000Z
 createTime: 2023/02/07 15:18:55
 permalink: /blogs/eytbkbca/
+tags:
+    - school life
 ---
 # 實驗室趣談
 

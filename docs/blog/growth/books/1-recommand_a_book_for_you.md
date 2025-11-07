@@ -5,6 +5,8 @@ lastUpdated: 2023-01-03T00:00:00.000Z
 date: 2023-01-03T00:00:00.000Z
 createTime: 2023/01/03 15:20:32
 permalink: /blogs/koi6g7ex/
+tags:
+    - book review
 ---
 # 《我想為你推薦一本書》書本讀後感
 ## 前言

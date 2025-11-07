@@ -6,6 +6,9 @@ lastUpdated: true
 timespent: 150
 createTime: 2025/02/03 13:03:06
 permalink: /blogs/jgceex6n/
+tags:
+  - goal setting
+  - reflection
 ---
 
 # 2024年尾六個月個人目標執行回顧

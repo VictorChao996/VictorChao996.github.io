@@ -5,6 +5,8 @@ date: 2022-12-31T00:00:00.000Z
 lastUpdated: 2022-12-31T00:00:00.000Z
 createTime: 2022/12/31 09:20:52
 permalink: /blogs/m94pkbbd/
+tags:
+  - annual review
 ---
 # 2022 年度回顧 ＆ 2023 年目標
 ## 前言

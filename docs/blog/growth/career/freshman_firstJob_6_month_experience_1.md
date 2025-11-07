@@ -6,6 +6,10 @@ lastUpdated: true
 timespent (min): 240
 createTime: 2024/11/10 17:35:09
 permalink: /blogs/sl6m2ovt/
+tags: 
+  - career
+  - freshman
+  - QA
 ---
 
 # 新鮮人工作半年回顧 （上）
