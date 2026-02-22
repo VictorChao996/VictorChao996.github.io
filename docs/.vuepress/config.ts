@@ -18,7 +18,7 @@ export default defineUserConfig({
   lang: 'zh-TW',
   locales: {
     '/': {
-      title: 'The Victor Within',
+      title: "Victor's Notes",
       lang: 'zh-TW',
       // description: '',
     },
@@ -31,7 +31,7 @@ export default defineUserConfig({
 
   head: [
     // 配置站点图标
-    ['link', { rel: 'icon', type: 'image/png', href: './avatar.jpeg'}],
+    ['link', { rel: 'icon', type: 'image/png', href: './VC_within_avatar.png'}],
   ],
 
   bundler: viteBundler(),

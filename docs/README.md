@@ -14,18 +14,14 @@ config:
       forceHoverState: false
     forceDark: true
     hero:
-      name: The Victor Within
-      tagline: Thought Refined Shines
-      text: 真正的勝利，源於內心的安靜沉思。在這個空間裡，我將閱讀視為汲取智慧的媒介，將寫作作為磨礪思維的工具。我相信，透過持續的探索與記錄，不僅能解鎖深層次的洞察力，更能清晰地揭示生活中每個篇章背後隱藏的邏輯，從而找到屬於自己的「內在勝利」。
+      name: Victor's Notes
+      tagline: 寫下所學，整理所思
+      text: 嗨，我是 Victor。這裡主要記錄我的技術學習筆記和一些生活想法。我相信透過持續的閱讀與寫作，可以把知識慢慢內化成自己的東西。歡迎逛逛，也歡迎交流。
       actions:
         -
           theme: brand
           text: Blog →
           link: /blogs/
-        -
-          theme: alt
-          text: 我的數位花園 →
-          link: https://digital-garden-victor-notes.vercel.app/
   - 
     type: posts
     collection: blog
