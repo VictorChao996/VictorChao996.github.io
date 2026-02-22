@@ -1,0 +1,64 @@
+import{_ as i,c as l,b as a,d as e,r as p,o as d}from"./app-CYJCq_Og.js";const t="/assets/mermaid-git-graph-BHCcoGKO.png",r={};function c(v,s){const n=p("Mermaid");return d(),l("div",null,[s[0]||(s[0]=a('<h2 id="intro" tabindex="-1"><a class="header-anchor" href="#intro"><span>Intro</span></a></h2><p>A diagramming and charting tool that could write diagram in text like content.</p><p>一種可以用文字描述繪圖的工具。</p><p>It is a JavaScript based diagramming and charting tool that <strong>renders Markdown-inspired text definitions</strong> to create and modify diagrams dynamically.</p><h2 id="usage" tabindex="-1"><a class="header-anchor" href="#usage"><span>Usage</span></a></h2><p>安裝後在 markdown 的 codeblock 中著名 mermaid 即可使用</p><div class="language-text line-numbers-mode" data-highlighter="shiki" data-ext="text" style="--shiki-light:#393a34;--shiki-dark:#dbd7caee;--shiki-light-bg:#ffffff;--shiki-dark-bg:#121212;"><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code"><code class="language-text"><span class="line"><span>```mermaid</span></span>\n<span class="line"><span> graph here....</span></span>\n<span class="line"><span>``</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="example" tabindex="-1"><a class="header-anchor" href="#example"><span>Example</span></a></h2><h3 id="sequence-diagram" tabindex="-1"><a class="header-anchor" href="#sequence-diagram"><span>Sequence Diagram</span></a></h3>',9)),e(n,{code:"eJyFUs1uwjAMvvMUfgH2AByQGJV6BXHYsbJSt7UISZe4RX37OWnZQNW2HHKIP38/diJ9DuQMFYxtwNsG9PQYhA336ASKI2CEAgWP5ITCCnD6SIDe4nQP3HayApwPl4Q4H7YXCiMbWlOUCXAqq+I91/LlvBD4kYIq7EAoCkTRplxU0e12v1d3u+Tw6u2FMJgOArrazyn0PUFSd0uyVBK04hosR4k/Ytb7HkxH5gpoLUhHDyC7J+xDViPt4IZaQ2P8oBGw55kJjfCIal0x+SHFz02ncgc66zABctX7IGjfksgQ7ExePpEHkiG4bELrEWpdwP90I9O9Wnoqqy7iMq6/qF9yvOos41MofLsA30Bk19o8ooytaZX6ManUrjvkZgJuwDs76UWJDTjC4Grdb8QbpQ8kjQ/z6sjVv/2Bhh3HbvMFddXXSw=="}),s[1]||(s[1]=a(`<ul><li>text in codeblock</li></ul><div class="language-text line-numbers-mode" data-highlighter="shiki" data-ext="text" style="--shiki-light:#393a34;--shiki-dark:#dbd7caee;--shiki-light-bg:#ffffff;--shiki-dark-bg:#121212;"><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code"><code class="language-text"><span class="line"><span>sequenceDiagram</span></span>
+<span class="line"><span>   participant DC as DataCenter</span></span>
+<span class="line"><span>    participant PW as playwright</span></span>
+<span class="line"><span>    participant QAS as QA-Service</span></span>
+<span class="line"><span>    participant PG as PG_DB</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>    note over PW: test start</span></span>
+<span class="line"><span>    PW --&gt;&gt; DC: DC kolSearch random</span></span>
+<span class="line"><span>    DC -&gt;&gt; PW: get random kol_id lists</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>    loop check all the kol_id in lists</span></span>
+<span class="line"><span>    PW --&gt;&gt; QAS: main account api </span></span>
+<span class="line"><span>    activate QAS</span></span>
+<span class="line"><span>    QAS --&gt;&gt; PG: query ai_portal.kol_url</span></span>
+<span class="line"><span>    PG --&gt;&gt; QAS: return kol_urls data</span></span>
+<span class="line"><span>    QAS --&gt;&gt; PG: query ai_portal.view_kol_url_latest</span></span>
+<span class="line"><span>    PG --&gt;&gt; QAS: return kol_urls main account data</span></span>
+<span class="line"><span>    QAS -&gt;&gt; PW: kol urls data of single kol</span></span>
+<span class="line"><span>    deactivate QAS</span></span>
+<span class="line"><span>    PW --&gt;&gt; PW: verify if only one url is under same platform</span></span>
+<span class="line"><span>    end</span></span>
+<span class="line"><span>    note over PW: test finish</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="git-graph" tabindex="-1"><a class="header-anchor" href="#git-graph"><span>Git Graph</span></a></h3><div class="hint-container info"><p class="hint-container-title">相關信息</p><p>目前 vitepress mermaid package 好像暫不支援 gitGraph, 繪製不出來, 要體驗可以使用 notion</p></div><p>繪製出的圖如下 <img src="`+t+`" alt="mermaid git graph" loading="lazy" width="1436" height="702"></p><div class="language-text line-numbers-mode" data-highlighter="shiki" data-ext="text" style="--shiki-light:#393a34;--shiki-dark:#dbd7caee;--shiki-light-bg:#ffffff;--shiki-dark-bg:#121212;"><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code"><code class="language-text"><span class="line"><span>gitGraph</span></span>
+<span class="line"><span>   commit id: &quot;regression point&quot;</span></span>
+<span class="line"><span>   branch v6.5_dh_dev</span></span>
+<span class="line"><span>   branch v6.5_dh_jeffery_dev</span></span>
+<span class="line"><span>   branch v6.5_dh_victor_dev</span></span>
+<span class="line"><span>   commit id: &quot;feat v-1&quot;</span></span>
+<span class="line"><span>   commit id: &quot;feat v-2&quot;</span></span>
+<span class="line"><span>   checkout v6.5_dh_jeffery_dev</span></span>
+<span class="line"><span>   commit id: &quot;feat j-1&quot;</span></span>
+<span class="line"><span>   commit id: &quot;feat j-2&quot;</span></span>
+<span class="line"><span>   commit id: &quot;feat j-3&quot;</span></span>
+<span class="line"><span>   checkout main</span></span>
+<span class="line"><span>   commit</span></span>
+<span class="line"><span>   commit</span></span>
+<span class="line"><span>   checkout v6.5_dh_dev</span></span>
+<span class="line"><span>   merge v6.5_dh_victor_dev</span></span>
+<span class="line"><span>   merge v6.5_dh_jeffery_dev</span></span>
+<span class="line"><span>   checkout main</span></span>
+<span class="line"><span>   merge v6.5_dh_dev id:&quot;new regression point&quot;</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="mindmap" tabindex="-1"><a class="header-anchor" href="#mindmap"><span>MindMap</span></a></h3>`,7)),e(n,{code:"eJxdkEFPwzAMhe/7FT5uB8R9QkgbV9AmGD/AS93GorWD40wqv56wtgiWU/K+55cnDyzNgGkFYKq+Xs/vzaYqAAfjjiVf7wDPKh1Ezq42ztJ2y0Fl3SK0eHdW/ZjmAI6aSo/GGZ1VZhFgb+ycI6QJQ8pjiNprNwIWj2pwUhlhX75wGnqlTGghzgkHAWpbCs4XEsr54Wz3jygNtIRejJaq1bcrrkP9PUCwCv+2eM+/xuk8XR0XAqcQhT/LDX9zQ6euZqUeRVi6f3hnXRlIHOrm0gJPqv2SciSBn5YJE9msvZANyM3qG4drcoA="}),s[2]||(s[2]=a(`<ul><li>text in codeblock</li></ul><div class="language-text line-numbers-mode" data-highlighter="shiki" data-ext="text" style="--shiki-light:#393a34;--shiki-dark:#dbd7caee;--shiki-light-bg:#ffffff;--shiki-dark-bg:#121212;"><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code"><code class="language-text"><span class="line"><span>mindmap</span></span>
+<span class="line"><span>  root((mindmap))</span></span>
+<span class="line"><span>    Origins</span></span>
+<span class="line"><span>      Long history</span></span>
+<span class="line"><span>      ::icon(fa fa-book)</span></span>
+<span class="line"><span>      Popularisation</span></span>
+<span class="line"><span>        British popular psychology author Tony Buzan</span></span>
+<span class="line"><span>    Research</span></span>
+<span class="line"><span>      On effectiveness&lt;br/&gt;and features</span></span>
+<span class="line"><span>      On Automatic creation</span></span>
+<span class="line"><span>        Uses</span></span>
+<span class="line"><span>            Creative techniques</span></span>
+<span class="line"><span>            Strategic planning</span></span>
+<span class="line"><span>            Argument mapping</span></span>
+<span class="line"><span>    Tools</span></span>
+<span class="line"><span>      Pen and paper</span></span>
+<span class="line"><span>      Mermaid</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="flowchart" tabindex="-1"><a class="header-anchor" href="#flowchart"><span>FlowChart</span></a></h3>`,3)),e(n,{code:"eJxLL0osyFDwCeJSUCgz0zOJT8mIL8tMLskvik9JLVPQ1VVISc1JLUlVSEwrSS1S8A0CCtnBVQKVwPRlpaalpRZVkqgLwsOlITexGMgDqgUphzoKrgFdDYaCvNRyheT83NzMEojtyPJA9XAH4zQRVQWmiajyXABNoGmh"}),s[3]||(s[3]=a(`<ul><li>text in codeblock</li></ul><div class="language-text line-numbers-mode" data-highlighter="shiki" data-ext="text" style="--shiki-light:#393a34;--shiki-dark:#dbd7caee;--shiki-light-bg:#ffffff;--shiki-dark-bg:#121212;"><pre class="shiki shiki-themes vitesse-light vitesse-dark vp-code"><code class="language-text"><span class="line"><span>graph LR</span></span>
+<span class="line"><span>  v6.4_dh_victor_dev -- delete after MR --&gt; v6.4_dh_dev</span></span>
+<span class="line"><span>  v6.4_jeffery_dev -- delete after MR --&gt; v6.4_dh_dev</span></span>
+<span class="line"><span>  v6.4_dh_dev -- delete after MR --&gt; master</span></span>
+<span class="line"><span>  </span></span>
+<span class="line"><span>  victor_dh_dev -- MR --&gt; master</span></span>
+<span class="line"><span>  victor_dh_dev -- new commit --&gt; victor_dh_dev</span></span>
+<span class="line"><span>  jeffery_dh_dev -- MR --&gt; master</span></span>
+<span class="line"><span>  jeffery_dh_dev-- new commit --&gt; jeffery_dh_dev</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="reference" tabindex="-1"><a class="header-anchor" href="#reference"><span>Reference</span></a></h2><ul><li><a href="https://github.com/mermaid-js/mermaid" target="_blank" rel="noopener noreferrer">Mermaid GitHub repo</a></li><li><a href="https://mermaid.js.org/" target="_blank" rel="noopener noreferrer">Mermaid Official Website</a></li><li><a href="https://mermaid.js.org/intro/" target="_blank" rel="noopener noreferrer">Mermaid Official Docs</a></li></ul>`,4))])}const m=i(r,[["render",c]]),h=JSON.parse('{"path":"/notes/qbc1f2wh/","title":"mermaid","lang":"zh-TW","frontmatter":{"title":"mermaid","prev":{"text":"Back to Command","link":"command"},"next":false,"outline":"deep","createTime":"2024/10/21 17:09:11","permalink":"/notes/qbc1f2wh/"},"readingTime":{"minutes":1.84,"words":553},"git":{"createdTime":1762312974000,"updatedTime":1771771860000,"contributors":[{"name":"VictorChao996","username":"VictorChao996","email":"96094victor@gmail.com","commits":2,"avatar":"https://avatars.githubusercontent.com/VictorChao996?v=4","url":"https://github.com/VictorChao996"}]},"filePathRelative":"notes/Other/mermaid.md","headers":[]}');export{m as comp,h as data};
